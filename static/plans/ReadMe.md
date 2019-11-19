@@ -4,8 +4,7 @@
 
 ## Digital Mockups
 ### Mockup 1
-
-![mock up 1](https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans/images.png)
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/digitalMockup0.png">
 
 [Linked to this Digital Mockup in Figma](https://www.figma.com/file/VZ1CzEo2bFvuxzwa7u4U4C/Impact-App?node-id=0%3A1)
 
