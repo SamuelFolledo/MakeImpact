@@ -2,11 +2,11 @@
 An iOS app that empowers users to make an impact to current issues or crisis
 
 ## Table Of Contents:
-1. [Planning Phase](#https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans)
-    - [Prototypes](#https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans#prototype)
-    - [Digital Mockups](#https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans#digitalMockups)
-    - [Wireframes](#https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans#wireframes)
-    - [User Stories](#https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans#userstories)
+1. [Planning Phase](https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans)
+    - [Prototypes](https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans#prototype)
+    - [Digital Mockups](https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans#digitalMockups)
+    - [Wireframes](https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans#wireframes)
+    - [User Stories](https://github.com/SamuelFolledo/MakeImpact/tree/master/static/plans#userstories)
     
 2. [Important Links](#importantLinks)
 3. [Contributors](#contributors)
