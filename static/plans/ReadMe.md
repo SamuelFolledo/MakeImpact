@@ -38,19 +38,19 @@
 <a name="wireframe2"></a>
 ### Wireframes 2
 - My Impact Screen
-<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-1.png">
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-1.png" width="475" height="461">
 
 - Friends Impact which is now depracated
-<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-2.png">
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-2.png" width="463" height="479">
 
 - Current News Screen
-<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-3.png">
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-3.png" width="467" height="749">
 
 - Settings Screen
-<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-4.png">
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-4.png" width="465" height="477">
 
 - Donate Screen
-<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-5.png">
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-5.png" width="467" height="749">
 
 <a name="wireframe3"></a>
 ### Wireframes 3
