@@ -1,16 +1,33 @@
 # Plans
 
+## Table Of Contents:
+1. [Prototypes](#prototype)
+2. [Digital Mockups](#digitalMockups)
+    - [Mockup 1](#mockup1)
+    - [Mockup 2](#mockup2)
+3. [Wireframes](#wireframes)
+    - [Wireframe 1](#wireframe1)
+    - [Wireframe 2](#wireframe2)
+    - [Wireframe 3](#wireframe3)
+4. [User Stories](#userstories)
+
+<a name="prototype"></a>
 ## Prototypes
 
+<a name="digitalMockups"></a>
 ## Digital Mockups
-### Mockup 1
+<a name="mockup1"></a>
+### Digital Mockup 1
 <img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/digitalMockup0.png">
 
 [Linked to this Digital Mockup in Figma](https://www.figma.com/file/VZ1CzEo2bFvuxzwa7u4U4C/Impact-App?node-id=0%3A1)
 
-### Mockup 1
+<a name="mockup2"></a>
+### Digital Mockup 2
 
+<a name="wireframes"></a>
 ## Wireframes
+<a name="wireframe1"></a>
 ### Wireframes 1 - Initial wireframe, but updated after User Interviews
 - My Portfolio screen, issue name screen, and onboarding
 <img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe1-1.png" width="465" height="828">
@@ -18,6 +35,7 @@
 - Charities and Acitivies/Notification screen
 <img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe1-2.png" width="465" height="828">
 
+<a name="wireframe2"></a>
 ### Wireframes 2
 - My Impact Screen
 <img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-1.png">
@@ -34,9 +52,11 @@
 - Donate Screen
 <img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-5.png">
 
+<a name="wireframe3"></a>
 ### Wireframes 3
 
 
+<a name="userstories"></a>
 ## User Stories
 ### Main Purpose: Easily donate and receive some kind of feedback/update on my donations on who or what they impacted
 
