@@ -11,8 +11,11 @@
 ### Mockup 1
 
 ## Wireframes
-### Wireframes 1
-
+### Wireframes 1 - Initial wireframe, but updated after User Interviews
+- My Portfolio screen, issue name screen, and onboarding
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe1-1.png" width="465" height="828">
+- Charities and Acitivies/Notification screen
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe1-2.png" width="465" height="828">
 
 ### Wireframes 2
 
