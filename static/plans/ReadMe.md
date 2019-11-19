@@ -14,11 +14,25 @@
 ### Wireframes 1 - Initial wireframe, but updated after User Interviews
 - My Portfolio screen, issue name screen, and onboarding
 <img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe1-1.png" width="465" height="828">
+
 - Charities and Acitivies/Notification screen
 <img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe1-2.png" width="465" height="828">
 
 ### Wireframes 2
+- My Impact Screen
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-1.png" width="465" height="828">
 
+- Friends Impact which is now depracated
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-2.png" width="465" height="828">
+
+- Current News Screen
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-3.png" width="465" height="828">
+
+- Settings Screen
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-4.png" width="465" height="828">
+
+- Donate Screen
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/plans/images/wireframe2-5.png" width="465" height="828">
 
 ### Wireframes 3
 
