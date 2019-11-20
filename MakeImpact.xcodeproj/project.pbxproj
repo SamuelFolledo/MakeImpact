@@ -22,7 +22,6 @@
 		33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33099D28238358C900119F18 /* LaunchScreen.storyboard */; };
 		33099D35238358C900119F18 /* MakeImpactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D34238358C900119F18 /* MakeImpactTests.swift */; };
 		33099D40238358C900119F18 /* MakeImpactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D3F238358C900119F18 /* MakeImpactUITests.swift */; };
-		E5CD258C2385C364007EFA9A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CD258A2385C364007EFA9A /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		33099D3B238358C900119F18 /* MakeImpactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeImpactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33099D3F238358C900119F18 /* MakeImpactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeImpactUITests.swift; sourceTree = "<group>"; };
 		33099D41238358C900119F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5CD258B2385C364007EFA9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 				33040AA22385B68500AA98F8 /* Controller */,
 				33040AA12385B68100AA98F8 /* View */,
 				33040AA02385B67B00AA98F8 /* Model */,
-				E5CD258A2385C364007EFA9A /* Storyboard.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -445,7 +442,6 @@
 				33040AAD2385B7FB00AA98F8 /* News.storyboard in Resources */,
 				33040AAB2385B79E00AA98F8 /* MyImpact.storyboard in Resources */,
 				33040AB12385B81800AA98F8 /* Discover.storyboard in Resources */,
-				E5CD258C2385C364007EFA9A /* Storyboard.storyboard in Resources */,
 				33040AB62385B84A00AA98F8 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,14 +515,6 @@
 				33099D29238358C900119F18 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		E5CD258A2385C364007EFA9A /* Storyboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5CD258B2385C364007EFA9A /* Base */,
-			);
-			name = Storyboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
