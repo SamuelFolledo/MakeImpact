@@ -10,7 +10,7 @@
         <!--SettingsVC-->
         <scene sceneID="XHg-Yh-2FW">
             <objects>
-                <viewController id="Myo-WW-7c3" customClass="SettingsVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingsVC" id="Myo-WW-7c3" customClass="SettingsVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gQn-22-l17">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
