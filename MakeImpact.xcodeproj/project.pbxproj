@@ -11,6 +11,10 @@
 		33040AAD2385B7FB00AA98F8 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33040AAC2385B7FB00AA98F8 /* News.storyboard */; };
 		33040AB12385B81800AA98F8 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33040AB02385B81800AA98F8 /* Discover.storyboard */; };
 		33040AB62385B84A00AA98F8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33040AB52385B84A00AA98F8 /* Settings.storyboard */; };
+		33040AB82385BB6200AA98F8 /* MyImpactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33040AB72385BB6200AA98F8 /* MyImpactVC.swift */; };
+		33040ABA2385BB7500AA98F8 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33040AB92385BB7500AA98F8 /* NewsVC.swift */; };
+		33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33040ABB2385BB9400AA98F8 /* DiscoverVC.swift */; };
+		33040ABE2385BBB300AA98F8 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33040ABD2385BBB300AA98F8 /* SettingsVC.swift */; };
 		33099D1E238358C600119F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D1D238358C600119F18 /* AppDelegate.swift */; };
 		33099D20238358C600119F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D1F238358C600119F18 /* SceneDelegate.swift */; };
 		33099D25238358C600119F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33099D23238358C600119F18 /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 		33040AAC2385B7FB00AA98F8 /* News.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		33040AB02385B81800AA98F8 /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		33040AB52385B84A00AA98F8 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		33040AB72385BB6200AA98F8 /* MyImpactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImpactVC.swift; sourceTree = "<group>"; };
+		33040AB92385BB7500AA98F8 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		33040ABB2385BB9400AA98F8 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		33040ABD2385BBB300AA98F8 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		33099D1A238358C600119F18 /* MakeImpact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeImpact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33099D1D238358C600119F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33099D1F238358C600119F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,9 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				33040AB52385B84A00AA98F8 /* Settings.storyboard */,
+				33040A952385B5F600AA98F8 /* Controller */,
 				33040A972385B60900AA98F8 /* Model */,
 				33040A962385B60400AA98F8 /* View */,
-				33040A952385B5F600AA98F8 /* Controller */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 		33040A952385B5F600AA98F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				33040ABD2385BBB300AA98F8 /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +173,7 @@
 		33040A9A2385B61800AA98F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				33040ABB2385BB9400AA98F8 /* DiscoverVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +195,7 @@
 		33040A9D2385B64500AA98F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				33040AB92385BB7500AA98F8 /* NewsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +249,7 @@
 		33040AA72385B6FC00AA98F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				33040AB72385BB6200AA98F8 /* MyImpactVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -448,8 +460,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33040AB82385BB6200AA98F8 /* MyImpactVC.swift in Sources */,
+				33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */,
+				33040ABA2385BB7500AA98F8 /* NewsVC.swift in Sources */,
 				33099D1E238358C600119F18 /* AppDelegate.swift in Sources */,
 				33099D20238358C600119F18 /* SceneDelegate.swift in Sources */,
+				33040ABE2385BBB300AA98F8 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
