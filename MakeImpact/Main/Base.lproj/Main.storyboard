@@ -50,7 +50,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNL-U4-Bwg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="-122"/>
+            <point key="canvasLocation" x="1831" y="-129"/>
         </scene>
         <!--News-->
         <scene sceneID="6X8-HT-WKS">
@@ -70,7 +70,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9S0-Yk-VGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1838" y="224"/>
+            <point key="canvasLocation" x="1825" y="230"/>
         </scene>
         <!--Settings-->
         <scene sceneID="p7k-gN-ett">
@@ -80,7 +80,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wsi-WS-dnY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="387"/>
+            <point key="canvasLocation" x="1824" y="384"/>
         </scene>
     </scenes>
 </document>
