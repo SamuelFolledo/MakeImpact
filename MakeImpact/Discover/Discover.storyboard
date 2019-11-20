@@ -10,7 +10,7 @@
         <!--DiscoverVC-->
         <scene sceneID="hCJ-5Q-KLI">
             <objects>
-                <viewController id="vx9-tw-BdU" customClass="DiscoverVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="discoverVC" id="vx9-tw-BdU" customClass="DiscoverVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6rm-Yo-7ss">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
