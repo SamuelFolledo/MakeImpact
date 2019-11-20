@@ -16,9 +16,9 @@
 		33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33040ABB2385BB9400AA98F8 /* DiscoverVC.swift */; };
 		33040ABE2385BBB300AA98F8 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33040ABD2385BBB300AA98F8 /* SettingsVC.swift */; };
 		33040AC12385BC6500AA98F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33040AC02385BC6500AA98F8 /* Constants.swift */; };
+		33040AC72385C74800AA98F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33040AC62385C74800AA98F8 /* Main.storyboard */; };
 		33099D1E238358C600119F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D1D238358C600119F18 /* AppDelegate.swift */; };
 		33099D20238358C600119F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D1F238358C600119F18 /* SceneDelegate.swift */; };
-		33099D25238358C600119F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33099D23238358C600119F18 /* Main.storyboard */; };
 		33099D27238358C900119F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33099D26238358C900119F18 /* Assets.xcassets */; };
 		33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33099D28238358C900119F18 /* LaunchScreen.storyboard */; };
 		33099D35238358C900119F18 /* MakeImpactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D34238358C900119F18 /* MakeImpactTests.swift */; };
@@ -52,10 +52,10 @@
 		33040ABB2385BB9400AA98F8 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
 		33040ABD2385BBB300AA98F8 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		33040AC02385BC6500AA98F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		33040AC62385C74800AA98F8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		33099D1A238358C600119F18 /* MakeImpact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeImpact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33099D1D238358C600119F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33099D1F238358C600119F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		33099D24238358C600119F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33099D26238358C900119F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33099D29238358C900119F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33099D2B238358C900119F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,17 +92,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33040A902385B4B000AA98F8 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				33099D23238358C600119F18 /* Main.storyboard */,
-				33040AA22385B68500AA98F8 /* Controller */,
-				33040AA12385B68100AA98F8 /* View */,
-				33040AA02385B67B00AA98F8 /* Model */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		33040A922385B4D000AA98F8 /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,27 +191,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		33040AA02385B67B00AA98F8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		33040AA12385B68100AA98F8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		33040AA22385B68500AA98F8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		33040AA42385B6EE00AA98F8 /* MyImpact */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +248,38 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		33040AC22385C71A00AA98F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				33040AC62385C74800AA98F8 /* Main.storyboard */,
+				33040AC52385C73F00AA98F8 /* Controller */,
+				33040AC42385C73900AA98F8 /* View */,
+				33040AC32385C73200AA98F8 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		33040AC32385C73200AA98F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33040AC42385C73900AA98F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33040AC52385C73F00AA98F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		33099D11238358C600119F18 = {
 			isa = PBXGroup;
 			children = (
@@ -303,7 +303,7 @@
 		33099D1C238358C600119F18 /* MakeImpact */ = {
 			isa = PBXGroup;
 			children = (
-				33040A902385B4B000AA98F8 /* Main */,
+				33040AC22385C71A00AA98F8 /* Main */,
 				33040AA42385B6EE00AA98F8 /* MyImpact */,
 				33040A922385B4D000AA98F8 /* News */,
 				33040A932385B4EC00AA98F8 /* Discover */,
@@ -440,11 +440,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33040AC72385C74800AA98F8 /* Main.storyboard in Resources */,
 				33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */,
 				33099D27238358C900119F18 /* Assets.xcassets in Resources */,
 				33040AAD2385B7FB00AA98F8 /* News.storyboard in Resources */,
 				33040AAB2385B79E00AA98F8 /* MyImpact.storyboard in Resources */,
-				33099D25238358C600119F18 /* Main.storyboard in Resources */,
 				33040AB12385B81800AA98F8 /* Discover.storyboard in Resources */,
 				33040AB62385B84A00AA98F8 /* Settings.storyboard in Resources */,
 			);
@@ -513,14 +513,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		33099D23238358C600119F18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				33099D24238358C600119F18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		33099D28238358C900119F18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
