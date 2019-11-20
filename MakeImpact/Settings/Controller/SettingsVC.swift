@@ -12,8 +12,11 @@ class SettingsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupViews()
+    }
+    
+    fileprivate func setupViews() {
+        view.backgroundColor = .blue
     }
     
 
