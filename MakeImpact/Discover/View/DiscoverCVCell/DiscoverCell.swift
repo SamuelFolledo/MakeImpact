@@ -15,7 +15,6 @@ class DiscoverCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
     
     override func awakeFromNib() {
         //initialize properties here
@@ -28,7 +27,6 @@ class DiscoverCell: UICollectionViewCell {
         imageView.image = kSAMPLEDISCOVERIMAGE
         imageView.contentMode = .scaleAspectFill
         titleLabel.text = "Forest"
-        descriptionLabel.text = "Save our trees"
         let gradient = CAGradientLayer()
         gradient.frame = imageView.bounds
         gradient.colors = [kWHITECGCOLOR, kBLACKCGCOLOR]
