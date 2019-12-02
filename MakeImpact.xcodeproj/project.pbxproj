@@ -26,6 +26,7 @@
 		338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9CFA23958CEF00907E5B /* DiscoverCell.swift */; };
 		338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338C9CFB23958CEF00907E5B /* DiscoverCell.xib */; };
 		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
+		338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D032395B18E00907E5B /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		338C9CFA23958CEF00907E5B /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
 		338C9CFB23958CEF00907E5B /* DiscoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCell.xib; sourceTree = "<group>"; };
 		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		338C9D032395B18E00907E5B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 		33040AC52385C73F00AA98F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				338C9D032395B18E00907E5B /* MainTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			files = (
 				33040AB82385BB6200AA98F8 /* MyImpactVC.swift in Sources */,
 				33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */,
+				338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */,
 				33040ABA2385BB7500AA98F8 /* NewsVC.swift in Sources */,
 				33099D1E238358C600119F18 /* AppDelegate.swift in Sources */,
 				338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */,

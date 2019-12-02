@@ -11,6 +11,8 @@ import UIKit
 class DiscoverVC: UIViewController {
 //MARK: Properties
     var issues: [Issue] = []
+    private lazy var width: CGFloat = view.frame.size.width
+    private lazy var height: CGFloat = view.frame.size.height
     
 //MARK: IBOutlets
     @IBOutlet weak var discoverCollectionView: UICollectionView!
@@ -33,7 +35,16 @@ class DiscoverVC: UIViewController {
 }
 
 //MARK: Extensions
-extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDataSource {
+extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout { //setting up //flow layout to resize cell
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: width * 0.9, height: height / 4)
+    }
+}
+
+//MARK: UICollectionViewDataSource
+extension DiscoverVC: UICollectionViewDataSource { //for data
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { //horizontal
         return 1 //just one section
     }
@@ -44,7 +55,7 @@ extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: DiscoverCell = collectionView
-          .dequeueReusableCell(withReuseIdentifier: kDISCOVERCELLID, for: indexPath) as! DiscoverCell
+            .dequeueReusableCell(withReuseIdentifier: kDISCOVERCELLID, for: indexPath) as! DiscoverCell
         cell.backgroundColor = .black
         cell.setupViews()
         return cell
