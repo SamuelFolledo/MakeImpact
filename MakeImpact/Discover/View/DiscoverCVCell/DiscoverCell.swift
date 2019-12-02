@@ -8,6 +8,8 @@
 
 import UIKit
 
+//@IBDesignable //allow us to use this view in designing storyboard
+//@IBInspectable var cornerRadius: CGFloat = 0.0
 class DiscoverCell: UICollectionViewCell {
 //MARK: Properties
     
@@ -31,6 +33,8 @@ class DiscoverCell: UICollectionViewCell {
         gradient.frame = imageView.bounds
         gradient.colors = [kWHITECGCOLOR, kBLACKCGCOLOR]
         imageView.layer.insertSublayer(gradient, at: 0)
+        self.layer.cornerRadius = 10
+        self.clipsToBounds = true //to allow cornerRadius
     }
     
     func initializeXibFile() {
