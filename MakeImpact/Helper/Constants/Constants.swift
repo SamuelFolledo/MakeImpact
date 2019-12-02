@@ -13,3 +13,5 @@ let kDISCOVERVC: String = "discoverVC"
 let kSETTINGSVC: String = "settingsVC"
 let kAUTHENTICATIONVC: String = "authenticationVC"
 
+//Discover Views
+let kDISCOVERCELL: String = "discoverCell"
