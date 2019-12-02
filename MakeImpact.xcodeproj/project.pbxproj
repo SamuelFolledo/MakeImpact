@@ -25,6 +25,7 @@
 		33099D40238358C900119F18 /* MakeImpactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D3F238358C900119F18 /* MakeImpactUITests.swift */; };
 		338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9CFA23958CEF00907E5B /* DiscoverCell.swift */; };
 		338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338C9CFB23958CEF00907E5B /* DiscoverCell.xib */; };
+		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		33099D41238358C900119F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338C9CFA23958CEF00907E5B /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
 		338C9CFB23958CEF00907E5B /* DiscoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCell.xib; sourceTree = "<group>"; };
+		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		33040A982385B60E00AA98F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				338C9D012395A4C700907E5B /* Issue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				33040AC12385BC6500AA98F8 /* Constants.swift in Sources */,
 				33099D20238358C600119F18 /* SceneDelegate.swift in Sources */,
 				33040ABE2385BBB300AA98F8 /* SettingsVC.swift in Sources */,
+				338C9D022395A4C700907E5B /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

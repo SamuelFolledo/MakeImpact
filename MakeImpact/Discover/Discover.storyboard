@@ -4,20 +4,57 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--DiscoverVC-->
         <scene sceneID="hCJ-5Q-KLI">
             <objects>
-                <viewController id="vx9-tw-BdU" customClass="DiscoverVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="discoverVC" id="vx9-tw-BdU" customClass="DiscoverVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6rm-Yo-7ss">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dxU-ED-S2V">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Txi-jL-yWO">
+                                    <size key="itemSize" width="413" height="158"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="discoverCellId" id="IJq-jQ-iFg" customClass="DiscoverCell" customModule="MakeImpact" customModuleProvider="target">
+                                        <rect key="frame" x="0.5" y="0.0" width="413" height="158"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w7H-Jc-6lS">
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="158"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="413" height="158"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vx9-tw-BdU" id="6ws-I1-b3x"/>
+                                    <outlet property="delegate" destination="vx9-tw-BdU" id="QQd-FQ-4sw"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dxU-ED-S2V" firstAttribute="leading" secondItem="BDb-Qp-VbW" secondAttribute="leading" id="7Aj-Jo-KFJ"/>
+                            <constraint firstItem="dxU-ED-S2V" firstAttribute="top" secondItem="BDb-Qp-VbW" secondAttribute="top" id="B0k-lU-JoE"/>
+                            <constraint firstItem="BDb-Qp-VbW" firstAttribute="trailing" secondItem="dxU-ED-S2V" secondAttribute="trailing" id="mtJ-hi-jgI"/>
+                            <constraint firstItem="BDb-Qp-VbW" firstAttribute="bottom" secondItem="dxU-ED-S2V" secondAttribute="bottom" id="p4Q-Lx-n4d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BDb-Qp-VbW"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hzu-rL-OgU"/>
+                    <connections>
+                        <outlet property="discoverCollectionView" destination="dxU-ED-S2V" id="n2m-oJ-soW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvg-Sm-dta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,7 +63,7 @@
         <!--Discover-->
         <scene sceneID="p96-I4-Vit">
             <objects>
-                <navigationController storyboardIdentifier="discoverVC" automaticallyAdjustsScrollViewInsets="NO" id="jCD-Oj-vB2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jCD-Oj-vB2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Discover" id="bMj-M5-Gmj"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
