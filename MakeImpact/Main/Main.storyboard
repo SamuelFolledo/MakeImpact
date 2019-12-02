@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-1488" y="46"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="rA7-BY-zaV">
             <objects>
-                <tabBarController id="82C-S3-cMI" sceneMemberID="viewController">
+                <tabBarController id="82C-S3-cMI" customClass="MainTabBarController" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CHJ-yg-FFg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
