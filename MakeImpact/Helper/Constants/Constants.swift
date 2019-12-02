@@ -6,6 +6,8 @@
 //  Copyright © 2019 SamuelFolledo. All rights reserved.
 //
 
+import UIKit
+
 //ViewController's Storyboard ID
 let kMYIMPACTVC: String = "myImpactVC"
 let kNEWSVC: String = "newsVC"
@@ -15,3 +17,8 @@ let kAUTHENTICATIONVC: String = "authenticationVC"
 
 //Discover Views
 let kDISCOVERCELL: String = "discoverCell"
+let kSAMPLEDISCOVERIMAGE: UIImage = UIImage(named: "forest")!
+
+//Colors
+let kBLACKCGCOLOR: CGColor = UIColor.black.cgColor
+let kWHITECGCOLOR: CGColor = UIColor.white.cgColor
