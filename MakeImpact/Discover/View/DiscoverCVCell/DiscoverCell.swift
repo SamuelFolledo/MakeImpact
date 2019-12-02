@@ -18,8 +18,31 @@ class DiscoverCell: UICollectionViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     override func awakeFromNib() {
+        //initialize properties here
         super.awakeFromNib()
-        // Initialization code
+        initializeXibFile()
+        setupViews()
+    }
+    
+    func setupViews() {
+        imageView.image = kSAMPLEDISCOVERIMAGE
+        imageView.contentMode = .scaleAspectFill
+        titleLabel.text = "Forest"
+        descriptionLabel.text = "Save our trees"
+        let gradient = CAGradientLayer()
+        gradient.frame = imageView.bounds
+        gradient.colors = [kWHITECGCOLOR, kBLACKCGCOLOR]
+        imageView.layer.insertSublayer(gradient, at: 0)
+    }
+    
+    func initializeXibFile() {
+        let bundle = Bundle.init(for: DiscoverCell.self)
+        if let viewsToAdd = bundle.loadNibNamed("DiscoverCell", owner: self, options: nil), let contentView = viewsToAdd.first as? UIView {
+            addSubview(contentView)
+            contentView.frame = self.bounds
+            contentView.autoresizingMask = [.flexibleHeight,
+                                            .flexibleWidth]
+        }
     }
 
 }
