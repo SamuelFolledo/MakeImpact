@@ -26,15 +26,22 @@ class DiscoverCell: UICollectionViewCell {
     }
     
     func setupViews() {
+//        contentView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = kSAMPLEDISCOVERIMAGE
         imageView.contentMode = .scaleAspectFill
         titleLabel.text = "Forest"
         let gradient = CAGradientLayer()
         gradient.frame = imageView.bounds
         gradient.colors = [kWHITECGCOLOR, kBLACKCGCOLOR]
-        imageView.layer.insertSublayer(gradient, at: 0)
+//        gradientView.isHidden = true
+        imageView.layer.insertSublayer(gradient, at: 100)
         self.layer.cornerRadius = 10
         self.clipsToBounds = true //to allow cornerRadius
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageView.frame = bounds
     }
     
     func initializeXibFile() {
@@ -46,5 +53,4 @@ class DiscoverCell: UICollectionViewCell {
                                             .flexibleWidth]
         }
     }
-
 }
