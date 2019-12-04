@@ -26,6 +26,7 @@ class DiscoverVC: UIViewController {
 //MARK: Private Methods
     fileprivate func setupViews() {
         view.backgroundColor = .green
+//        discoverCollectionView.register(UINib(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCELLID)
     }
     
 //MARK: IBActions
