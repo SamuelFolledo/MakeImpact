@@ -38,14 +38,14 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="pYU-SP-Emh" firstAttribute="width" secondItem="7kv-bq-EPb" secondAttribute="width" id="1wf-z3-WJC"/>
+                <constraint firstItem="pYU-SP-Emh" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="1wf-z3-WJC"/>
                 <constraint firstItem="7kv-bq-EPb" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="9CR-kZ-kCu"/>
-                <constraint firstItem="pYU-SP-Emh" firstAttribute="height" secondItem="7kv-bq-EPb" secondAttribute="height" id="9QR-gZ-ExZ"/>
+                <constraint firstItem="pYU-SP-Emh" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="9QR-gZ-ExZ"/>
                 <constraint firstItem="7kv-bq-EPb" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="FJp-re-p7p"/>
                 <constraint firstAttribute="trailing" secondItem="KXX-A6-kBA" secondAttribute="trailing" constant="10" id="JtK-dk-vfL"/>
                 <constraint firstItem="7kv-bq-EPb" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="NQk-6B-zow"/>
-                <constraint firstItem="pYU-SP-Emh" firstAttribute="centerX" secondItem="7kv-bq-EPb" secondAttribute="centerX" id="WVV-2O-cnc"/>
-                <constraint firstItem="pYU-SP-Emh" firstAttribute="centerY" secondItem="7kv-bq-EPb" secondAttribute="centerY" id="bFn-9O-gHV"/>
+                <constraint firstItem="pYU-SP-Emh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="WVV-2O-cnc"/>
+                <constraint firstItem="pYU-SP-Emh" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="bFn-9O-gHV"/>
                 <constraint firstAttribute="bottom" secondItem="KXX-A6-kBA" secondAttribute="bottom" constant="10" id="deY-nN-rgi"/>
                 <constraint firstItem="7kv-bq-EPb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dy4-PZ-3Go"/>
                 <constraint firstItem="KXX-A6-kBA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="nWr-NM-kFQ"/>
