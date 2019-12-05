@@ -13,9 +13,21 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="268"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="jEM-Ol-Hkb">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryb-Nk-c1k">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
-                </imageView>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="jEM-Ol-Hkb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="jEM-Ol-Hkb" firstAttribute="centerY" secondItem="ryb-Nk-c1k" secondAttribute="centerY" id="UCf-fx-RkE"/>
+                        <constraint firstItem="jEM-Ol-Hkb" firstAttribute="height" secondItem="ryb-Nk-c1k" secondAttribute="height" id="VU9-cn-T1f"/>
+                        <constraint firstItem="jEM-Ol-Hkb" firstAttribute="centerX" secondItem="ryb-Nk-c1k" secondAttribute="centerX" id="dfC-jd-WkE"/>
+                        <constraint firstItem="jEM-Ol-Hkb" firstAttribute="width" secondItem="ryb-Nk-c1k" secondAttribute="width" id="gA4-GA-ffl"/>
+                    </constraints>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="UGj-ro-IPb">
                     <rect key="frame" x="5" y="209.5" width="404" height="53.5"/>
                     <subviews>
@@ -42,20 +54,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="jEM-Ol-Hkb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6MF-Vb-WYw"/>
-                <constraint firstItem="UGj-ro-IPb" firstAttribute="width" secondItem="jEM-Ol-Hkb" secondAttribute="width" constant="-10" id="7pp-4L-RLC"/>
-                <constraint firstItem="jEM-Ol-Hkb" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="4:5" constant="-10" id="8aD-lq-55M"/>
-                <constraint firstItem="UGj-ro-IPb" firstAttribute="top" secondItem="jEM-Ol-Hkb" secondAttribute="bottom" constant="5" id="AGE-VB-6ev"/>
-                <constraint firstItem="UGj-ro-IPb" firstAttribute="centerX" secondItem="jEM-Ol-Hkb" secondAttribute="centerX" id="E3f-bB-wa4"/>
-                <constraint firstItem="jEM-Ol-Hkb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EUt-90-Scr"/>
                 <constraint firstAttribute="bottom" secondItem="UGj-ro-IPb" secondAttribute="bottom" constant="5" id="OHM-eV-srF"/>
-                <constraint firstItem="jEM-Ol-Hkb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PID-r9-c4R"/>
+                <constraint firstItem="UGj-ro-IPb" firstAttribute="width" secondItem="ryb-Nk-c1k" secondAttribute="width" constant="-10" id="OoK-bG-PQw"/>
                 <constraint firstItem="UGj-ro-IPb" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:5" id="SFt-5Y-uje"/>
-                <constraint firstItem="jEM-Ol-Hkb" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="ThC-yb-WnO"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jEM-Ol-Hkb" secondAttribute="trailing" id="isf-3H-rji"/>
-                <constraint firstItem="jEM-Ol-Hkb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="olS-Fe-BhU"/>
-                <constraint firstItem="jEM-Ol-Hkb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="owu-xM-7CC"/>
-                <constraint firstItem="jEM-Ol-Hkb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vCx-k5-t3D"/>
+                <constraint firstItem="UGj-ro-IPb" firstAttribute="top" secondItem="ryb-Nk-c1k" secondAttribute="bottom" constant="5" id="UYb-sz-bYd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ryb-Nk-c1k" secondAttribute="trailing" id="YYl-KI-3VK"/>
+                <constraint firstItem="ryb-Nk-c1k" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="4:5" constant="-10" id="i3L-uL-u9Z"/>
+                <constraint firstItem="UGj-ro-IPb" firstAttribute="centerX" secondItem="ryb-Nk-c1k" secondAttribute="centerX" id="m3j-93-e5s"/>
+                <constraint firstItem="ryb-Nk-c1k" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="paM-H8-CQH"/>
+                <constraint firstItem="ryb-Nk-c1k" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="rL3-mr-ceR"/>
+                <constraint firstAttribute="top" secondItem="ryb-Nk-c1k" secondAttribute="top" id="tPb-ni-Omj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
