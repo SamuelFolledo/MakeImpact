@@ -12,7 +12,10 @@ class DiscoverDetailVC: UIViewController {
 //MARK: Properties
     
 //MARK: IBOutlets
-    
+    @IBOutlet weak var headlineView: HeadlineView!
+    @IBOutlet weak var impactButton: UIButton!
+    @IBOutlet weak var textView: UITextView!
+   
 //MARK: App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
