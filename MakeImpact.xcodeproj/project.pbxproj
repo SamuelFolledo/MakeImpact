@@ -30,6 +30,7 @@
 		33F820702398B52200D93723 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F8206F2398B52200D93723 /* HeadlineView.xib */; };
 		33F820722398BBE600D93723 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F820712398BBE600D93723 /* HeadlineView.swift */; };
 		33F820742398D47B00D93723 /* DiscoverDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F820732398D47B00D93723 /* DiscoverDetailVC.swift */; };
+		33F8207623998F4F00D93723 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8207523998F4F00D93723 /* UIView+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		33F8206F2398B52200D93723 /* HeadlineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineView.xib; sourceTree = "<group>"; };
 		33F820712398BBE600D93723 /* HeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
 		33F820732398D47B00D93723 /* DiscoverDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverDetailVC.swift; sourceTree = "<group>"; };
+		33F8207523998F4F00D93723 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 		33040AA92385B77C00AA98F8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				33F8207523998F4F00D93723 /* UIView+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */,
 				33040ABA2385BB7500AA98F8 /* NewsVC.swift in Sources */,
 				33F820742398D47B00D93723 /* DiscoverDetailVC.swift in Sources */,
+				33F8207623998F4F00D93723 /* UIView+extensions.swift in Sources */,
 				33099D1E238358C600119F18 /* AppDelegate.swift in Sources */,
 				33F820722398BBE600D93723 /* HeadlineView.swift in Sources */,
 				338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */,

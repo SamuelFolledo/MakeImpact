@@ -26,13 +26,22 @@ class DiscoverVC: UIViewController {
 //MARK: Private Methods
     fileprivate func setupViews() {
         testPopulateIssues()
+//        discoverCollectionView.register(DiscoverCell.self, forCellWithReuseIdentifier: "\(kDISCOVERCELLID)")
+//        discoverCollectionView.register(DiscoverCell.self, forCellWithReuseIdentifier: kDISCOVERCELLID) //only needed if I am not using storyboard
+        discoverCollectionView.delegate = self
+        discoverCollectionView.dataSource = self
+        discoverCollectionView.register(UINib.init(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: "discoverCellId2")
+//        discoverCollectionView.isUserInteractionEnabled = true
     }
     
     fileprivate func testPopulateIssues() {
         let issue1: Issue = Issue(id: "1", mainCategory: "Forest", secondCategory: "Earth", contact: "Samuel")
-        issues.append(issue1)
         let issue2: Issue = Issue(id: "2", mainCategory: "World Hunger", secondCategory: "Poverty", contact: "Raquel")
-        issues.append(issue2)
+        let issue3: Issue = Issue(id: "3", mainCategory: "Forest", secondCategory: "Earth", contact: "Samuel")
+        let issue4: Issue = Issue(id: "4", mainCategory: "World Hunger", secondCategory: "Poverty", contact: "Raquel")
+        let issue5: Issue = Issue(id: "5", mainCategory: "Forest", secondCategory: "Earth", contact: "Samuel")
+        let issue6: Issue = Issue(id: "6", mainCategory: "World Hunger", secondCategory: "Poverty", contact: "Raquel")
+        issues = [issue1, issue2, issue3, issue4, issue5, issue6]
     }
     
 //MARK: IBActions
@@ -42,7 +51,9 @@ class DiscoverVC: UIViewController {
         switch segue.identifier {
         case kSHOWDETAILID:
             print(kSHOWDETAILID)
-            break
+            guard let indexPath = (sender as? UIView)?.findCollectionViewIndexPath() else { return }
+            guard let detailVC: DiscoverDetailVC = segue.destination as? DiscoverDetailVC else { return }
+            detailVC.issue = issues[indexPath.section]
         default:
             break
         }
@@ -50,9 +61,11 @@ class DiscoverVC: UIViewController {
 }
 
 //MARK: Extensions
-extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout { //setting up //flow layout to resize cell
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { //didSelect
+        print(issues[indexPath.section])
+        guard let cell: DiscoverCell = collectionView.cellForItem(at: indexPath) as? DiscoverCell else { return }
         performSegue(withIdentifier: kSHOWDETAILID, sender: cell)
     }
     
@@ -76,7 +89,16 @@ extension DiscoverVC: UICollectionViewDataSource { //for data
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: DiscoverCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERCELLID, for: indexPath) as! DiscoverCell
-        cell.populateViews(issue: issues[indexPath.row])
+        cell.issue = issues[indexPath.section]
+//        cell.issueViewDelegate = self
+//        cell.indexPath = indexPath
         return cell
+    }
+}
+
+//IssueViewDelegate extension
+extension DiscoverVC: IssueViewDelegate {
+    func issueViewTapped(at index: IndexPath) {
+        print(index.section)
     }
 }

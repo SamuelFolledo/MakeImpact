@@ -6,13 +6,26 @@
 //  Copyright © 2019 SamuelFolledo. All rights reserved.
 //
 
+protocol IssueViewDelegate {
+    func issueViewTapped(at index: IndexPath)
+}
+
 import UIKit
 
 //@IBDesignable //allow us to use this view in designing storyboard
 //@IBInspectable var cornerRadius: CGFloat = 0.0
 class DiscoverCell: UICollectionViewCell {
 //MARK: Properties
-    var issue: Issue!
+    var indexPath: IndexPath!
+    var issue: Issue! {
+        didSet {
+//            print("Main category = \(issue.mainCategory!)")
+            imageView.image = issue.image
+            titleLabel.text = issue.mainCategory
+            populateViews()
+        }
+    }
+    var issueViewDelegate: IssueViewDelegate!
     
 //MARK: Outlets
     @IBOutlet weak var imageView: UIImageView!
@@ -23,13 +36,18 @@ class DiscoverCell: UICollectionViewCell {
         //initialize properties here
         super.awakeFromNib()
         initializeXibFile()
+//        self.isUserInteractionEnabled = false
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+//        gradientView.isUserInteractionEnabled = true
+//        gradientView.addGestureRecognizer(tapGesture)
     }
     
-    func populateViews(issue: Issue) {
-        self.issue = issue
-        imageView.image = issue.image
+    @objc func handleTap(){
+        issueViewDelegate.issueViewTapped(at: indexPath)
+    }
+    
+    func populateViews() {
         imageView.contentMode = .scaleAspectFill
-        titleLabel.text = issue.mainCategory
         let gradient = CAGradientLayer()
         gradient.frame = imageView.bounds
         gradient.colors = [kWHITECGCOLOR, kBLACKCGCOLOR]

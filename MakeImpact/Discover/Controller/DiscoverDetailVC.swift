@@ -10,7 +10,7 @@ import UIKit
 
 class DiscoverDetailVC: UIViewController {
 //MARK: Properties
-    
+    var issue: Issue!
 //MARK: IBOutlets
     @IBOutlet weak var headlineView: HeadlineView!
     @IBOutlet weak var impactButton: UIButton!
