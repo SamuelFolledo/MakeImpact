@@ -27,6 +27,7 @@
 		338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338C9CFB23958CEF00907E5B /* DiscoverCell.xib */; };
 		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
 		338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D032395B18E00907E5B /* MainTabBarController.swift */; };
+		33F820702398B52200D93723 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F8206F2398B52200D93723 /* HeadlineView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		338C9CFB23958CEF00907E5B /* DiscoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCell.xib; sourceTree = "<group>"; };
 		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		338C9D032395B18E00907E5B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		33F8206F2398B52200D93723 /* HeadlineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +168,7 @@
 		33040A992385B61300AA98F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				33F8206E2398B41900D93723 /* Headline */,
+				33F8206E2398B41900D93723 /* HeadlineView */,
 				338C9CFE23958CF800907E5B /* DiscoverCVCell */,
 			);
 			path = View;
@@ -357,11 +359,12 @@
 			path = DiscoverCVCell;
 			sourceTree = "<group>";
 		};
-		33F8206E2398B41900D93723 /* Headline */ = {
+		33F8206E2398B41900D93723 /* HeadlineView */ = {
 			isa = PBXGroup;
 			children = (
+				33F8206F2398B52200D93723 /* HeadlineView.xib */,
 			);
-			path = Headline;
+			path = HeadlineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,6 +473,7 @@
 			files = (
 				338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */,
 				33040AC72385C74800AA98F8 /* Main.storyboard in Resources */,
+				33F820702398B52200D93723 /* HeadlineView.xib in Resources */,
 				33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */,
 				33099D27238358C900119F18 /* Assets.xcassets in Resources */,
 				33040AAD2385B7FB00AA98F8 /* News.storyboard in Resources */,
