@@ -28,6 +28,7 @@
 		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
 		338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D032395B18E00907E5B /* MainTabBarController.swift */; };
 		33F820702398B52200D93723 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F8206F2398B52200D93723 /* HeadlineView.xib */; };
+		33F820722398BBE600D93723 /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F820712398BBE600D93723 /* HeadlineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		338C9D032395B18E00907E5B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		33F8206F2398B52200D93723 /* HeadlineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadlineView.xib; sourceTree = "<group>"; };
+		33F820712398BBE600D93723 /* HeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -363,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				33F8206F2398B52200D93723 /* HeadlineView.xib */,
+				33F820712398BBE600D93723 /* HeadlineView.swift */,
 			);
 			path = HeadlineView;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */,
 				33040ABA2385BB7500AA98F8 /* NewsVC.swift in Sources */,
 				33099D1E238358C600119F18 /* AppDelegate.swift in Sources */,
+				33F820722398BBE600D93723 /* HeadlineView.swift in Sources */,
 				338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */,
 				33040AC12385BC6500AA98F8 /* Constants.swift in Sources */,
 				33099D20238358C600119F18 /* SceneDelegate.swift in Sources */,
