@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="915.94202898550736" y="63.616071428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Discover DetailVC-->
         <scene sceneID="ucQ-42-B3l">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="tRo-zx-cJe" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="tRo-zx-cJe" customClass="DiscoverDetailVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WkC-Hs-L00">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-tL-GNE">
                                 <rect key="frame" x="0.0" y="87.5" width="414" height="726"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jot-GR-sJq">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jot-GR-sJq" customClass="HeadlineView" customModule="MakeImpact" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
