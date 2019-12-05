@@ -12,6 +12,7 @@ import UIKit
 //@IBInspectable var cornerRadius: CGFloat = 0.0
 class DiscoverCell: UICollectionViewCell {
 //MARK: Properties
+    var issue: Issue!
     
 //MARK: Outlets
     @IBOutlet weak var imageView: UIImageView!
@@ -22,14 +23,13 @@ class DiscoverCell: UICollectionViewCell {
         //initialize properties here
         super.awakeFromNib()
         initializeXibFile()
-        setupViews()
     }
     
-    func setupViews() {
-//        contentView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = kSAMPLEDISCOVERIMAGE
+    func populateViews(issue: Issue) {
+        self.issue = issue
+        imageView.image = issue.image
         imageView.contentMode = .scaleAspectFill
-        titleLabel.text = "Forest"
+        titleLabel.text = issue.mainCategory
         let gradient = CAGradientLayer()
         gradient.frame = imageView.bounds
         gradient.colors = [kWHITECGCOLOR, kBLACKCGCOLOR]
