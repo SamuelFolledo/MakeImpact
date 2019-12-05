@@ -54,11 +54,47 @@
                     <navigationItem key="navigationItem" id="Hzu-rL-OgU"/>
                     <connections>
                         <outlet property="discoverCollectionView" destination="dxU-ED-S2V" id="n2m-oJ-soW"/>
+                        <segue destination="tRo-zx-cJe" kind="show" id="O1i-fR-uPM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvg-Sm-dta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="915.94202898550736" y="63.616071428571423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ucQ-42-B3l">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="tRo-zx-cJe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WkC-Hs-L00">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-tL-GNE">
+                                <rect key="frame" x="0.0" y="87.5" width="414" height="726"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jot-GR-sJq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SPm-tL-GNE" firstAttribute="centerX" secondItem="XSx-Oi-Fu3" secondAttribute="centerX" id="Hgc-gB-PHC"/>
+                            <constraint firstItem="SPm-tL-GNE" firstAttribute="width" secondItem="XSx-Oi-Fu3" secondAttribute="width" id="M00-0z-aBl"/>
+                            <constraint firstItem="SPm-tL-GNE" firstAttribute="height" secondItem="XSx-Oi-Fu3" secondAttribute="height" multiplier="1.00122" id="rTS-Wt-Eh8"/>
+                            <constraint firstItem="SPm-tL-GNE" firstAttribute="centerY" secondItem="XSx-Oi-Fu3" secondAttribute="centerY" id="zEE-9D-quK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XSx-Oi-Fu3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6pb-nS-9PZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0l-qC-RMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789.8550724637682" y="63.616071428571423"/>
         </scene>
         <!--Discover-->
         <scene sceneID="p96-I4-Vit">

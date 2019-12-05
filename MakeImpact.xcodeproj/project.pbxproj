@@ -166,6 +166,7 @@
 		33040A992385B61300AA98F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				33F8206E2398B41900D93723 /* Headline */,
 				338C9CFE23958CF800907E5B /* DiscoverCVCell */,
 			);
 			path = View;
@@ -354,6 +355,13 @@
 				338C9CFB23958CEF00907E5B /* DiscoverCell.xib */,
 			);
 			path = DiscoverCVCell;
+			sourceTree = "<group>";
+		};
+		33F8206E2398B41900D93723 /* Headline */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
