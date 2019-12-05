@@ -25,8 +25,14 @@ class DiscoverVC: UIViewController {
     
 //MARK: Private Methods
     fileprivate func setupViews() {
-        view.backgroundColor = .green
-//        discoverCollectionView.register(UINib(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCELLID)
+        testPopulateIssues()
+    }
+    
+    fileprivate func testPopulateIssues() {
+        let issue1: Issue = Issue(issueID: "1", issueMainCategory: "Forest", issueSecondCategory: "Earth", issueContact: "Samuel")
+        issues.append(issue1)
+        let issue2: Issue = Issue(issueID: "2", issueMainCategory: "World Hunger", issueSecondCategory: "Poverty", issueContact: "Raquel")
+        issues.append(issue2)
     }
     
 //MARK: IBActions
@@ -37,6 +43,11 @@ class DiscoverVC: UIViewController {
 
 //MARK: Extensions
 extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout { //setting up //flow layout to resize cell
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        performSegue(withIdentifier: kSHOWDETAIL, sender: cell)
+    }
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -51,7 +62,7 @@ extension DiscoverVC: UICollectionViewDataSource { //for data
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int { //vertical
-        return 2
+        return issues.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
