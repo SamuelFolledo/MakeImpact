@@ -15,6 +15,9 @@ let kDISCOVERVC: String = "discoverVC"
 let kSETTINGSVC: String = "settingsVC"
 let kAUTHENTICATIONVC: String = "authenticationVC"
 
+//storyboard Segue Identifier
+let kSHOWDETAIL: String = "showDetailId"
+
 //Discover Views
 let kDISCOVERCELLID: String = "discoverCellId"
 let kSAMPLEDISCOVERIMAGE: UIImage = UIImage(named: "forest")!
@@ -25,7 +28,7 @@ let kWHITECGCOLOR: CGColor = UIColor.white.cgColor
 
 //Issue model
 let kISSUEID: String = "issueId"
-let kISSUECATEGORY1: String = "issueCategory1"
-let kISSUECATEGORY2: String = "issueCategory2"
+let kISSUEMAINCATEGORY: String = "issueMainCategory"
+let kISSUESECONDCATEGORY: String = "issueSecondCategory"
 let kISSUECONTACT: String = "issueContact"
 let kISSUEIMAGE: String = "issueImage"
