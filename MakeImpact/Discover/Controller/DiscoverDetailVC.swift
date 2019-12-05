@@ -24,7 +24,8 @@ class DiscoverDetailVC: UIViewController {
     
 //MARK: Private Methods
     fileprivate func setupViews() {
-        view.backgroundColor = .blue
+        textView.isEditable = false
+        
     }
     
 //MARK: IBActions
