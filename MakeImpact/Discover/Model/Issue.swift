@@ -9,26 +9,26 @@
 import UIKit
 
 class Issue {
-    let issueID: String!
-    let issueMainCategory: String!
-    var issueSecondCategory: String = ""
-    var issueContact: String = ""
-    let issueImage: UIImage!
+    let id: String!
+    let mainCategory: String!
+    var secondCategory: String = ""
+    var contact: String = ""
+    let image: UIImage!
     
-    init(issueID: String, issueMainCategory: String, issueSecondCategory: String, issueContact: String, issueImage: UIImage = kSAMPLEDISCOVERIMAGE) {
-        self.issueID = issueID
-        self.issueMainCategory = issueMainCategory
-        self.issueSecondCategory = issueSecondCategory
-        self.issueContact = issueContact
-        self.issueImage = issueImage
+    init(id: String, mainCategory: String, secondCategory: String, contact: String, image: UIImage = kSAMPLEDISCOVERIMAGE) {
+        self.id = id
+        self.mainCategory = mainCategory
+        self.secondCategory = secondCategory
+        self.contact = contact
+        self.image = image
     }
     
     init(dictionary: [String: Any]) {
-        self.issueID = dictionary[kISSUEID] as? String
-        self.issueMainCategory = dictionary[kISSUEMAINCATEGORY] as? String
-        self.issueSecondCategory = (dictionary[kISSUESECONDCATEGORY] as? String)!
-        self.issueContact = (dictionary[kISSUECONTACT] as? String)!
-        self.issueImage =  UIImage(data: dictionary[kISSUEIMAGE] as! Data)
+        self.id = dictionary[kISSUEID] as? String
+        self.mainCategory = dictionary[kISSUEMAINCATEGORY] as? String
+        self.secondCategory = (dictionary[kISSUESECONDCATEGORY] as? String)!
+        self.contact = (dictionary[kISSUECONTACT] as? String)!
+        self.image =  UIImage(data: dictionary[kISSUEIMAGE] as! Data)
     }
     
 //    class func currentIssue() -> Issue? { //checks UserDefaults for current issueI, else return nil
