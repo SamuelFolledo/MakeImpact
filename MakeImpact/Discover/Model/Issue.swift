@@ -10,23 +10,23 @@ import UIKit
 
 class Issue {
     let issueID: String!
-    let issueCategory1: String!
-    var issueCategory2: String = ""
+    let issueMainCategory: String!
+    var issueSecondCategory: String = ""
     var issueContact: String = ""
     let issueImage: UIImage!
     
-    init(issueID: String, issueCategory1: String, issueCategory2: String, issueContact: String, issueImage: UIImage = kSAMPLEDISCOVERIMAGE) {
+    init(issueID: String, issueMainCategory: String, issueSecondCategory: String, issueContact: String, issueImage: UIImage = kSAMPLEDISCOVERIMAGE) {
         self.issueID = issueID
-        self.issueCategory1 = issueCategory1
-        self.issueCategory2 = issueCategory2
+        self.issueMainCategory = issueMainCategory
+        self.issueSecondCategory = issueSecondCategory
         self.issueContact = issueContact
         self.issueImage = issueImage
     }
     
     init(dictionary: [String: Any]) {
         self.issueID = dictionary[kISSUEID] as? String
-        self.issueCategory1 = dictionary[kISSUECATEGORY1] as? String
-        self.issueCategory2 = (dictionary[kISSUECATEGORY1] as? String)!
+        self.issueMainCategory = dictionary[kISSUEMAINCATEGORY] as? String
+        self.issueSecondCategory = (dictionary[kISSUESECONDCATEGORY] as? String)!
         self.issueContact = (dictionary[kISSUECONTACT] as? String)!
         self.issueImage =  UIImage(data: dictionary[kISSUEIMAGE] as! Data)
     }
