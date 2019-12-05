@@ -29,23 +29,31 @@ class DiscoverVC: UIViewController {
     }
     
     fileprivate func testPopulateIssues() {
-        let issue1: Issue = Issue(issueID: "1", issueMainCategory: "Forest", issueSecondCategory: "Earth", issueContact: "Samuel")
+        let issue1: Issue = Issue(id: "1", mainCategory: "Forest", secondCategory: "Earth", contact: "Samuel")
         issues.append(issue1)
-        let issue2: Issue = Issue(issueID: "2", issueMainCategory: "World Hunger", issueSecondCategory: "Poverty", issueContact: "Raquel")
+        let issue2: Issue = Issue(id: "2", mainCategory: "World Hunger", secondCategory: "Poverty", contact: "Raquel")
         issues.append(issue2)
     }
     
 //MARK: IBActions
     
 //MARK: Helpers
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case kSHOWDETAILID:
+            print(kSHOWDETAILID)
+            break
+        default:
+            break
+        }
+    }
 }
 
 //MARK: Extensions
 extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout { //setting up //flow layout to resize cell
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) else { return }
-        performSegue(withIdentifier: kSHOWDETAIL, sender: cell)
+        performSegue(withIdentifier: kSHOWDETAILID, sender: cell)
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -68,8 +76,7 @@ extension DiscoverVC: UICollectionViewDataSource { //for data
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: DiscoverCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERCELLID, for: indexPath) as! DiscoverCell
-        cell.backgroundColor = .black
-        cell.setupViews()
+        cell.populateViews(issue: issues[indexPath.row])
         return cell
     }
 }

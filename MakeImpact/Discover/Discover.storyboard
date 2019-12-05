@@ -55,7 +55,7 @@
                     <navigationItem key="navigationItem" id="Hzu-rL-OgU"/>
                     <connections>
                         <outlet property="discoverCollectionView" destination="dxU-ED-S2V" id="n2m-oJ-soW"/>
-                        <segue destination="tRo-zx-cJe" kind="show" id="O1i-fR-uPM"/>
+                        <segue destination="tRo-zx-cJe" kind="show" identifier="showDetailId" id="O1i-fR-uPM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvg-Sm-dta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
