@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jCD-Oj-vB2">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,12 +13,12 @@
             <objects>
                 <viewController storyboardIdentifier="discoverVC" id="vx9-tw-BdU" customClass="DiscoverVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6rm-Yo-7ss">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dxU-ED-S2V">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Txi-jL-yWO">
                                     <size key="itemSize" width="413" height="158"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -27,11 +27,12 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="discoverCellId" id="IJq-jQ-iFg" customClass="DiscoverCell" customModule="MakeImpact" customModuleProvider="target">
-                                        <rect key="frame" x="0.5" y="0.0" width="413" height="158"/>
+                                        <rect key="frame" x="-19" y="0.0" width="413" height="158"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w7H-Jc-6lS">
                                             <rect key="frame" x="0.0" y="0.0" width="413" height="158"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="413" height="158"/>
                                     </collectionViewCell>
@@ -66,35 +67,91 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="tRo-zx-cJe" customClass="DiscoverDetailVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WkC-Hs-L00">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-tL-GNE">
-                                <rect key="frame" x="0.0" y="87.5" width="414" height="726"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-tL-GNE" userLabel="headlineView">
+                                <rect key="frame" x="0.0" y="44" width="375" height="258.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jot-GR-sJq" customClass="HeadlineView" customModule="MakeImpact" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jot-GR-sJq" customClass="HeadlineView" customModule="MakeImpact" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="258.5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Jot-GR-sJq" secondAttribute="trailing" id="2jf-qK-LaM"/>
+                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="top" secondItem="SPm-tL-GNE" secondAttribute="top" id="AL6-0G-L1Q"/>
+                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="leading" secondItem="SPm-tL-GNE" secondAttribute="leading" id="Yba-5Z-2at"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jot-GR-sJq" secondAttribute="bottom" id="mba-g1-L2s"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5W-ac-sWT" userLabel="textView">
+                                <rect key="frame" x="0.0" y="302.5" width="375" height="315.5"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sVA-yU-Ixx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="315.5"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sVA-yU-Ixx" firstAttribute="leading" secondItem="z5W-ac-sWT" secondAttribute="leading" id="VNP-1q-WuH"/>
+                                    <constraint firstAttribute="trailing" secondItem="sVA-yU-Ixx" secondAttribute="trailing" id="bZk-sW-FYa"/>
+                                    <constraint firstItem="sVA-yU-Ixx" firstAttribute="top" secondItem="z5W-ac-sWT" secondAttribute="top" id="fJB-3C-Lfw"/>
+                                    <constraint firstAttribute="bottom" secondItem="sVA-yU-Ixx" secondAttribute="bottom" id="kh5-AX-RRe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4L-b3-f7v" userLabel="buttonView">
+                                <rect key="frame" x="37.5" y="555.5" width="300" height="52.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-jp-J7e">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="52.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <state key="normal" title="Make an Impact"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rp1-jp-J7e" secondAttribute="trailing" id="GXF-Yy-7mu"/>
+                                    <constraint firstAttribute="bottom" secondItem="rp1-jp-J7e" secondAttribute="bottom" id="P30-ao-tsl"/>
+                                    <constraint firstItem="rp1-jp-J7e" firstAttribute="height" secondItem="n4L-b3-f7v" secondAttribute="height" id="Y9S-2E-fff"/>
+                                    <constraint firstItem="rp1-jp-J7e" firstAttribute="width" secondItem="n4L-b3-f7v" secondAttribute="width" id="ejP-gG-iD8"/>
+                                    <constraint firstItem="rp1-jp-J7e" firstAttribute="leading" secondItem="n4L-b3-f7v" secondAttribute="leading" id="gRW-IQ-iUM"/>
+                                    <constraint firstItem="rp1-jp-J7e" firstAttribute="top" secondItem="n4L-b3-f7v" secondAttribute="top" id="pNO-jy-1Pb"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="XSx-Oi-Fu3" firstAttribute="bottom" secondItem="z5W-ac-sWT" secondAttribute="bottom" id="1df-Fq-fPY"/>
+                            <constraint firstItem="z5W-ac-sWT" firstAttribute="width" secondItem="SPm-tL-GNE" secondAttribute="width" id="8aw-wg-0cq"/>
                             <constraint firstItem="SPm-tL-GNE" firstAttribute="centerX" secondItem="XSx-Oi-Fu3" secondAttribute="centerX" id="Hgc-gB-PHC"/>
                             <constraint firstItem="SPm-tL-GNE" firstAttribute="width" secondItem="XSx-Oi-Fu3" secondAttribute="width" id="M00-0z-aBl"/>
-                            <constraint firstItem="SPm-tL-GNE" firstAttribute="height" secondItem="XSx-Oi-Fu3" secondAttribute="height" multiplier="1.00122" id="rTS-Wt-Eh8"/>
-                            <constraint firstItem="SPm-tL-GNE" firstAttribute="centerY" secondItem="XSx-Oi-Fu3" secondAttribute="centerY" id="zEE-9D-quK"/>
+                            <constraint firstItem="n4L-b3-f7v" firstAttribute="centerX" secondItem="z5W-ac-sWT" secondAttribute="centerX" id="MlY-Rl-e4z"/>
+                            <constraint firstItem="n4L-b3-f7v" firstAttribute="width" secondItem="z5W-ac-sWT" secondAttribute="width" multiplier="4:5" id="N7c-eA-iCu"/>
+                            <constraint firstItem="n4L-b3-f7v" firstAttribute="bottom" secondItem="XSx-Oi-Fu3" secondAttribute="bottom" constant="-10" id="Ztl-Uh-3gR"/>
+                            <constraint firstItem="z5W-ac-sWT" firstAttribute="centerX" secondItem="SPm-tL-GNE" secondAttribute="centerX" id="kLn-Uy-jqU"/>
+                            <constraint firstItem="n4L-b3-f7v" firstAttribute="height" secondItem="z5W-ac-sWT" secondAttribute="height" multiplier="1:6" id="nj2-uv-f9H"/>
+                            <constraint firstItem="SPm-tL-GNE" firstAttribute="height" secondItem="XSx-Oi-Fu3" secondAttribute="height" multiplier="4.5:10" id="rTS-Wt-Eh8"/>
+                            <constraint firstItem="z5W-ac-sWT" firstAttribute="top" secondItem="SPm-tL-GNE" secondAttribute="bottom" id="vrn-R3-Jbg"/>
+                            <constraint firstItem="SPm-tL-GNE" firstAttribute="top" secondItem="XSx-Oi-Fu3" secondAttribute="top" id="yF7-2Z-BwJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XSx-Oi-Fu3"/>
                     </view>
                     <navigationItem key="navigationItem" id="6pb-nS-9PZ"/>
+                    <connections>
+                        <outlet property="headlineView" destination="Jot-GR-sJq" id="8q3-Xa-4KR"/>
+                        <outlet property="impactButton" destination="rp1-jp-J7e" id="HF7-eX-R8V"/>
+                        <outlet property="textView" destination="sVA-yU-Ixx" id="1cf-vW-1kH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0l-qC-RMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1789.8550724637682" y="63.616071428571423"/>
+            <point key="canvasLocation" x="1789.5999999999999" y="63.418290854572717"/>
         </scene>
         <!--Discover-->
         <scene sceneID="p96-I4-Vit">
@@ -104,7 +161,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mYY-Mq-qx5">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
