@@ -24,6 +24,7 @@ class DiscoverDetailVC: UIViewController {
     
 //MARK: Private Methods
     fileprivate func setupViews() {
+        headlineView.issue = issue
         textView.isEditable = false
         
     }
