@@ -35,7 +35,7 @@ class DiscoverCell: UICollectionViewCell {
     override func awakeFromNib() {
         //initialize properties here
         super.awakeFromNib()
-        initializeXibFile()
+        //initializeXibFile()
 //        self.isUserInteractionEnabled = false
 //        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
 //        gradientView.isUserInteractionEnabled = true
@@ -48,6 +48,7 @@ class DiscoverCell: UICollectionViewCell {
     
     func populateViews() {
         imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         let gradient = CAGradientLayer()
         gradient.frame = imageView.bounds
         gradient.colors = [kWHITECGCOLOR, kBLACKCGCOLOR]

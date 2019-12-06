@@ -36,7 +36,7 @@ class HeadlineView: UIView {
 
     func initializeXibFile() {
         let bundle = Bundle.init(for: HeadlineView.self)
-        if let viewsToAdd = bundle.loadNibNamed("TutorialView", owner: self, options: nil), let contentView = viewsToAdd.first as? UIView {
+        if let viewsToAdd = bundle.loadNibNamed("HeadlineView", owner: self, options: nil), let contentView = viewsToAdd.first as? UIView {
             addSubview(contentView)
             contentView.frame = self.bounds
             contentView.autoresizingMask = [.flexibleHeight,

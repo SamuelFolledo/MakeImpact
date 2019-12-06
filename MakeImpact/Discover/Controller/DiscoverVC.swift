@@ -30,7 +30,13 @@ class DiscoverVC: UIViewController {
 //        discoverCollectionView.register(DiscoverCell.self, forCellWithReuseIdentifier: kDISCOVERCELLID) //only needed if I am not using storyboard
         discoverCollectionView.delegate = self
         discoverCollectionView.dataSource = self
-//        discoverCollectionView.register(UINib.init(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: "discoverCellId")
+        discoverCollectionView.register(UINib.init(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: "discoverCellId")
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.itemSize = CGSize(width: 98, height: 134)
+        flowLayout.sectionInset = UIEdgeInsets(top: 0,left: 5,bottom: 0,right: 5)
+        flowLayout.scrollDirection = .vertical
+        flowLayout.minimumInteritemSpacing = 0.0
+        discoverCollectionView.collectionViewLayout = flowLayout
     }
     
     fileprivate func testPopulateIssues() {
@@ -61,7 +67,6 @@ class DiscoverVC: UIViewController {
 
 //MARK: Extensions
 extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { //didSelect
         print(issues[indexPath.section])
         guard let cell: DiscoverCell = collectionView.cellForItem(at: indexPath) as? DiscoverCell else { return }
