@@ -10,6 +10,11 @@ import UIKit
 
 class HeadlineView: UIView {
 //MARK: Properties
+    var issue: Issue! {
+        didSet {
+            setupView()
+        }
+    }
     
 //MARK: IBOutlets
     @IBOutlet weak var titleLabel: UILabel!
@@ -19,18 +24,16 @@ class HeadlineView: UIView {
     override init(frame: CGRect) { //for programmatically
         super.init(frame: frame)
         initializeXibFile()
-        setupView()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initializeXibFile()
-        setupView() //required or it won't update colorLabel
     }
     
     func setupView() {
-        headlineImageView.image = kSAMPLEDISCOVERIMAGE
-        titleLabel.text = "Eyo This will be the title label"
+        headlineImageView.image = issue.image
+        titleLabel.text = issue.mainCategory
         descriptionLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
     }
 
