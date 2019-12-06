@@ -55,10 +55,9 @@ class DiscoverVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case kSHOWDETAILID:
-            print(kSHOWDETAILID)
-            guard let indexPath = (sender as? UIView)?.findCollectionViewIndexPath() else { return }
+            guard let issue = sender as? Issue else { return }
             guard let detailVC: DiscoverDetailVC = segue.destination as? DiscoverDetailVC else { return }
-            detailVC.issue = issues[indexPath.section]
+            detailVC.issue = issue
         default:
             break
         }
@@ -68,9 +67,7 @@ class DiscoverVC: UIViewController {
 //MARK: Extensions
 extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { //didSelect
-        print(issues[indexPath.section])
-        guard let cell: DiscoverCell = collectionView.cellForItem(at: indexPath) as? DiscoverCell else { return }
-        performSegue(withIdentifier: kSHOWDETAILID, sender: cell)
+        performSegue(withIdentifier: kSHOWDETAILID, sender: issues[indexPath.section])
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -94,15 +91,7 @@ extension DiscoverVC: UICollectionViewDataSource { //for data
         let cell: DiscoverCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERCELLID, for: indexPath) as! DiscoverCell
         cell.issue = issues[indexPath.section]
-//        cell.issueViewDelegate = self
-//        cell.indexPath = indexPath
         return cell
     }
 }
 
-//IssueViewDelegate extension
-extension DiscoverVC: IssueViewDelegate {
-    func issueViewTapped(at index: IndexPath) {
-        print(index.section)
-    }
-}
