@@ -9,13 +9,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoverCell" customModule="MakeImpact" customModuleProvider="target">
             <connections>
-                <outlet property="gradientView" destination="pYU-SP-Emh" id="Opj-7r-Jgw"/>
-                <outlet property="imageView" destination="7kv-bq-EPb" id="O30-3v-Vvt"/>
-                <outlet property="titleLabel" destination="KXX-A6-kBA" id="haP-2M-nMx"/>
+                <outlet property="gradientView" destination="pYU-SP-Emh" id="riM-pS-huP"/>
+                <outlet property="imageView" destination="7kv-bq-EPb" id="OqV-th-dKh"/>
+                <outlet property="titleLabel" destination="KXX-A6-kBA" id="ln8-Aa-4bi"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="discoverCellId2" id="gTV-IL-0wX" customClass="DiscoverCell" customModule="MakeImpact" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX">
             <rect key="frame" x="0.0" y="0.0" width="273" height="139"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">

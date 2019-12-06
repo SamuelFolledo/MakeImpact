@@ -30,17 +30,16 @@ class DiscoverVC: UIViewController {
 //        discoverCollectionView.register(DiscoverCell.self, forCellWithReuseIdentifier: kDISCOVERCELLID) //only needed if I am not using storyboard
         discoverCollectionView.delegate = self
         discoverCollectionView.dataSource = self
-        discoverCollectionView.register(UINib.init(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: "discoverCellId2")
-//        discoverCollectionView.isUserInteractionEnabled = true
+//        discoverCollectionView.register(UINib.init(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: "discoverCellId")
     }
     
     fileprivate func testPopulateIssues() {
         let issue1: Issue = Issue(id: "1", mainCategory: "Forest", secondCategory: "Earth", contact: "Samuel")
         let issue2: Issue = Issue(id: "2", mainCategory: "World Hunger", secondCategory: "Poverty", contact: "Raquel")
-        let issue3: Issue = Issue(id: "3", mainCategory: "Forest", secondCategory: "Earth", contact: "Samuel")
-        let issue4: Issue = Issue(id: "4", mainCategory: "World Hunger", secondCategory: "Poverty", contact: "Raquel")
-        let issue5: Issue = Issue(id: "5", mainCategory: "Forest", secondCategory: "Earth", contact: "Samuel")
-        let issue6: Issue = Issue(id: "6", mainCategory: "World Hunger", secondCategory: "Poverty", contact: "Raquel")
+        let issue3: Issue = Issue(id: "3", mainCategory: "Recycle", secondCategory: "Earth", contact: "Samuel")
+        let issue4: Issue = Issue(id: "4", mainCategory: "Politics", secondCategory: "Poverty", contact: "Raquel")
+        let issue5: Issue = Issue(id: "5", mainCategory: "Women In Tech", secondCategory: "Earth", contact: "Samuel")
+        let issue6: Issue = Issue(id: "6", mainCategory: "Innovative Technology", secondCategory: "Poverty", contact: "Raquel")
         issues = [issue1, issue2, issue3, issue4, issue5, issue6]
     }
     

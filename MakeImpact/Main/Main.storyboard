@@ -36,7 +36,7 @@
                         <segue destination="VYw-Rj-H1v" kind="relationship" relationship="viewControllers" id="p8b-ou-E6I"/>
                         <segue destination="AWl-J4-Gb1" kind="relationship" relationship="viewControllers" id="rU4-5v-wvv"/>
                         <segue destination="Cp7-vZ-497" kind="relationship" relationship="viewControllers" id="azg-AP-Tbm"/>
-                        <segue destination="d5q-BB-qJP" kind="presentation" id="Vrz-as-SWs"/>
+                        <segue destination="d5q-BB-qJP" kind="presentation" identifier="toLoginSegueId" id="Vrz-as-SWs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bE8-tO-Yrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

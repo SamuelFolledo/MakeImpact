@@ -34,12 +34,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.15482183199999999" green="0.51544284330000001" blue="0.018791459650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <size key="customSize" width="413" height="158"/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="vx9-tw-BdU" id="6ws-I1-b3x"/>
-                                    <outlet property="delegate" destination="vx9-tw-BdU" id="QQd-FQ-4sw"/>
+                                    <outlet property="dataSource" destination="vx9-tw-BdU" id="6Ox-jY-0zE"/>
+                                    <outlet property="delegate" destination="vx9-tw-BdU" id="X5y-Q7-M3U"/>
                                 </connections>
                             </collectionView>
                         </subviews>
