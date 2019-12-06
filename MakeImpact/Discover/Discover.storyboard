@@ -38,20 +38,14 @@
                                         <size key="customSize" width="413" height="158"/>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="vx9-tw-BdU" id="6Ox-jY-0zE"/>
-                                    <outlet property="delegate" destination="vx9-tw-BdU" id="X5y-Q7-M3U"/>
-                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dxU-ED-S2V" firstAttribute="leading" secondItem="BDb-Qp-VbW" secondAttribute="leading" id="7Aj-Jo-KFJ"/>
                             <constraint firstItem="dxU-ED-S2V" firstAttribute="top" secondItem="BDb-Qp-VbW" secondAttribute="top" id="B0k-lU-JoE"/>
-                            <constraint firstItem="dxU-ED-S2V" firstAttribute="width" secondItem="BDb-Qp-VbW" secondAttribute="width" id="MAi-kl-6KQ"/>
                             <constraint firstItem="BDb-Qp-VbW" firstAttribute="trailing" secondItem="dxU-ED-S2V" secondAttribute="trailing" id="mtJ-hi-jgI"/>
                             <constraint firstItem="BDb-Qp-VbW" firstAttribute="bottom" secondItem="dxU-ED-S2V" secondAttribute="bottom" id="p4Q-Lx-n4d"/>
-                            <constraint firstItem="dxU-ED-S2V" firstAttribute="height" secondItem="BDb-Qp-VbW" secondAttribute="height" id="svD-QB-uEG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BDb-Qp-VbW"/>
                     </view>
@@ -83,17 +77,17 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Jot-GR-sJq" secondAttribute="trailing" id="2jf-qK-LaM"/>
-                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="top" secondItem="SPm-tL-GNE" secondAttribute="top" id="AL6-0G-L1Q"/>
-                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="leading" secondItem="SPm-tL-GNE" secondAttribute="leading" id="Yba-5Z-2at"/>
-                                    <constraint firstAttribute="bottom" secondItem="Jot-GR-sJq" secondAttribute="bottom" id="mba-g1-L2s"/>
+                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="height" secondItem="SPm-tL-GNE" secondAttribute="height" id="MvK-cQ-uFW"/>
+                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="width" secondItem="SPm-tL-GNE" secondAttribute="width" id="VST-HK-Tx2"/>
+                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="centerY" secondItem="SPm-tL-GNE" secondAttribute="centerY" id="dia-WK-AHh"/>
+                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="centerX" secondItem="SPm-tL-GNE" secondAttribute="centerX" id="vbh-T8-ds8"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5W-ac-sWT" userLabel="textView">
-                                <rect key="frame" x="0.0" y="302.5" width="375" height="315.5"/>
+                                <rect key="frame" x="0.0" y="302.5" width="375" height="254.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sVA-yU-Ixx">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="315.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="254.5"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -102,17 +96,17 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="sVA-yU-Ixx" firstAttribute="leading" secondItem="z5W-ac-sWT" secondAttribute="leading" id="VNP-1q-WuH"/>
-                                    <constraint firstAttribute="trailing" secondItem="sVA-yU-Ixx" secondAttribute="trailing" id="bZk-sW-FYa"/>
-                                    <constraint firstItem="sVA-yU-Ixx" firstAttribute="top" secondItem="z5W-ac-sWT" secondAttribute="top" id="fJB-3C-Lfw"/>
-                                    <constraint firstAttribute="bottom" secondItem="sVA-yU-Ixx" secondAttribute="bottom" id="kh5-AX-RRe"/>
+                                    <constraint firstItem="sVA-yU-Ixx" firstAttribute="height" secondItem="z5W-ac-sWT" secondAttribute="height" id="0DG-TT-hl2"/>
+                                    <constraint firstItem="sVA-yU-Ixx" firstAttribute="centerX" secondItem="z5W-ac-sWT" secondAttribute="centerX" id="3Gp-ka-gdk"/>
+                                    <constraint firstItem="sVA-yU-Ixx" firstAttribute="centerY" secondItem="z5W-ac-sWT" secondAttribute="centerY" id="Eod-Rr-pl9"/>
+                                    <constraint firstItem="sVA-yU-Ixx" firstAttribute="width" secondItem="z5W-ac-sWT" secondAttribute="width" id="nPh-39-lXf"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4L-b3-f7v" userLabel="buttonView">
-                                <rect key="frame" x="37.5" y="555.5" width="300" height="52.5"/>
+                                <rect key="frame" x="37.5" y="567" width="300" height="41"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-jp-J7e">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="41"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <state key="normal" title="Make an Impact"/>
                                     </button>
@@ -130,15 +124,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XSx-Oi-Fu3" firstAttribute="bottom" secondItem="z5W-ac-sWT" secondAttribute="bottom" id="1df-Fq-fPY"/>
                             <constraint firstItem="z5W-ac-sWT" firstAttribute="width" secondItem="SPm-tL-GNE" secondAttribute="width" id="8aw-wg-0cq"/>
                             <constraint firstItem="SPm-tL-GNE" firstAttribute="centerX" secondItem="XSx-Oi-Fu3" secondAttribute="centerX" id="Hgc-gB-PHC"/>
                             <constraint firstItem="SPm-tL-GNE" firstAttribute="width" secondItem="XSx-Oi-Fu3" secondAttribute="width" id="M00-0z-aBl"/>
                             <constraint firstItem="n4L-b3-f7v" firstAttribute="centerX" secondItem="z5W-ac-sWT" secondAttribute="centerX" id="MlY-Rl-e4z"/>
                             <constraint firstItem="n4L-b3-f7v" firstAttribute="width" secondItem="z5W-ac-sWT" secondAttribute="width" multiplier="4:5" id="N7c-eA-iCu"/>
+                            <constraint firstItem="n4L-b3-f7v" firstAttribute="top" secondItem="z5W-ac-sWT" secondAttribute="bottom" constant="10" id="Vno-Bh-pR0"/>
                             <constraint firstItem="n4L-b3-f7v" firstAttribute="bottom" secondItem="XSx-Oi-Fu3" secondAttribute="bottom" constant="-10" id="Ztl-Uh-3gR"/>
                             <constraint firstItem="z5W-ac-sWT" firstAttribute="centerX" secondItem="SPm-tL-GNE" secondAttribute="centerX" id="kLn-Uy-jqU"/>
-                            <constraint firstItem="n4L-b3-f7v" firstAttribute="height" secondItem="z5W-ac-sWT" secondAttribute="height" multiplier="1:6" id="nj2-uv-f9H"/>
                             <constraint firstItem="SPm-tL-GNE" firstAttribute="height" secondItem="XSx-Oi-Fu3" secondAttribute="height" multiplier="4.5:10" id="rTS-Wt-Eh8"/>
                             <constraint firstItem="z5W-ac-sWT" firstAttribute="top" secondItem="SPm-tL-GNE" secondAttribute="bottom" id="vrn-R3-Jbg"/>
                             <constraint firstItem="SPm-tL-GNE" firstAttribute="top" secondItem="XSx-Oi-Fu3" secondAttribute="top" id="yF7-2Z-BwJ"/>
