@@ -32,3 +32,8 @@ let kISSUEMAINCATEGORY: String = "issueMainCategory"
 let kISSUESECONDCATEGORY: String = "issueSecondCategory"
 let kISSUECONTACT: String = "issueContact"
 let kISSUEIMAGE: String = "issueImage"
+
+//colors
+let kHEXCOLORSTRING: String = "#008B43FF"
+let kMAINCOLOR: UIColor = UIColor.init(hex: kHEXCOLORSTRING)!
+let kMAINCGCOLOR: CGColor = kMAINCOLOR.cgColor
