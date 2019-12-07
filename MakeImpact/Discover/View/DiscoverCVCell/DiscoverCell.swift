@@ -33,17 +33,14 @@ class DiscoverCell: UICollectionViewCell {
     func populateViews() {
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        let gradient = CAGradientLayer()
-        gradient.frame = imageView.bounds
-        gradient.colors = [UIColor.clear.cgColor, kBLACKCGCOLOR]
-        gradientView.alpha = 0.2
-        self.layer.insertSublayer(gradient, at: 1)
+        gradientView.isHidden = true
+        let gradientLayer = CAGradientLayer()
+        guard let black: CGColor = UIColor.black.cgColor.copy(alpha: 0.4) else { return }
+        gradientLayer.colors = [UIColor.clear.cgColor, black]
+        gradientLayer.locations = [0.6, 1.0] //0.75 instead of 0 so there will be more clear color than black
+        gradientLayer.frame = imageView.frame
+        imageView.layer.insertSublayer(gradientLayer, at: 2)
         self.layer.cornerRadius = 10
         self.clipsToBounds = true //to allow cornerRadius
     }
-    
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//        imageView.frame = bounds
-//    }
 }
