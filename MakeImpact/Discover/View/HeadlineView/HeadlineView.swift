@@ -34,7 +34,7 @@ class HeadlineView: UIView {
     func setupView() {
         headlineImageView.image = issue.image
         titleLabel.text = issue.mainCategory
-        descriptionLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+        descriptionLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
 
     func initializeXibFile() {
