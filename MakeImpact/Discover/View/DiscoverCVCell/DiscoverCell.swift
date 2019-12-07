@@ -35,8 +35,9 @@ class DiscoverCell: UICollectionViewCell {
         imageView.clipsToBounds = true
         let gradient = CAGradientLayer()
         gradient.frame = imageView.bounds
-        gradient.colors = [kWHITECGCOLOR, kBLACKCGCOLOR]
-        imageView.layer.insertSublayer(gradient, at: 1)
+        gradient.colors = [UIColor.clear.cgColor, kBLACKCGCOLOR]
+        gradientView.alpha = 0.2
+        self.layer.insertSublayer(gradient, at: 1)
         self.layer.cornerRadius = 10
         self.clipsToBounds = true //to allow cornerRadius
     }
