@@ -10,9 +10,9 @@ import UIKit
 
 extension UIButton {
     func isImpactButton() {
-//        self.layer.borderWidth = 2
-//        self.layer.borderColor = UIColor.purple.cgColor
-        self.backgroundColor = kMAINCOLOR
+        self.layer.borderWidth = 2
+        self.layer.borderColor = kMAINCGCOLOR
+        self.backgroundColor = kMAINCOLOR.withAlphaComponent(0.6)
         self.setTitleColor(.white, for: .normal)
         self.layer.cornerRadius = self.frame.height / 5
         self.clipsToBounds = true

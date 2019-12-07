@@ -98,12 +98,13 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Content:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sVA-yU-Ixx">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="254.5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.14343825089218379" green="0.40072457901554404" blue="0.13666603117580875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="sVA-yU-Ixx" firstAttribute="height" secondItem="z5W-ac-sWT" secondAttribute="height" id="0DG-TT-hl2"/>
                                     <constraint firstItem="sVA-yU-Ixx" firstAttribute="centerX" secondItem="z5W-ac-sWT" secondAttribute="centerX" id="3Gp-ka-gdk"/>
@@ -151,6 +152,8 @@
                         <viewLayoutGuide key="safeArea" id="XSx-Oi-Fu3"/>
                     </view>
                     <navigationItem key="navigationItem" id="6pb-nS-9PZ"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="headlineView" destination="Jot-GR-sJq" id="8q3-Xa-4KR"/>
                         <outlet property="impactButton" destination="rp1-jp-J7e" id="HF7-eX-R8V"/>
