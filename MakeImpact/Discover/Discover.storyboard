@@ -71,30 +71,39 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="258.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jot-GR-sJq" customClass="HeadlineView" customModule="MakeImpact" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="258.5"/>
+                                        <rect key="frame" x="0.0" y="42" width="375" height="216.5"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzO-UD-MNh">
+                                        <rect key="frame" x="10" y="10" width="355" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="height" secondItem="SPm-tL-GNE" secondAttribute="height" id="MvK-cQ-uFW"/>
+                                    <constraint firstItem="DzO-UD-MNh" firstAttribute="height" secondItem="SPm-tL-GNE" secondAttribute="height" multiplier="0.0851064" id="05N-2z-vke"/>
+                                    <constraint firstItem="DzO-UD-MNh" firstAttribute="top" secondItem="SPm-tL-GNE" secondAttribute="top" constant="10" id="4CL-pm-RK7"/>
+                                    <constraint firstAttribute="trailing" secondItem="DzO-UD-MNh" secondAttribute="trailing" constant="10" id="AYw-f2-74z"/>
                                     <constraint firstItem="Jot-GR-sJq" firstAttribute="width" secondItem="SPm-tL-GNE" secondAttribute="width" id="VST-HK-Tx2"/>
-                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="centerY" secondItem="SPm-tL-GNE" secondAttribute="centerY" id="dia-WK-AHh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jot-GR-sJq" secondAttribute="bottom" id="c9X-Cc-F0v"/>
+                                    <constraint firstItem="Jot-GR-sJq" firstAttribute="top" secondItem="DzO-UD-MNh" secondAttribute="bottom" constant="10" id="jQn-bM-Obu"/>
+                                    <constraint firstItem="DzO-UD-MNh" firstAttribute="leading" secondItem="SPm-tL-GNE" secondAttribute="leading" constant="10" id="rO3-qc-Nvi"/>
                                     <constraint firstItem="Jot-GR-sJq" firstAttribute="centerX" secondItem="SPm-tL-GNE" secondAttribute="centerX" id="vbh-T8-ds8"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5W-ac-sWT" userLabel="textView">
                                 <rect key="frame" x="0.0" y="302.5" width="375" height="254.5"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sVA-yU-Ixx">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Content:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sVA-yU-Ixx">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="254.5"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.14343825089218379" green="0.40072457901554404" blue="0.13666603117580875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="sVA-yU-Ixx" firstAttribute="height" secondItem="z5W-ac-sWT" secondAttribute="height" id="0DG-TT-hl2"/>
                                     <constraint firstItem="sVA-yU-Ixx" firstAttribute="centerX" secondItem="z5W-ac-sWT" secondAttribute="centerX" id="3Gp-ka-gdk"/>
@@ -107,8 +116,11 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-jp-J7e">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="41"/>
+                                        <color key="backgroundColor" red="0.0" green="0.54509803921568623" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                        <state key="normal" title="Make an Impact"/>
+                                        <state key="normal" title="Make an Impact">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
