@@ -23,6 +23,8 @@
 		33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33099D28238358C900119F18 /* LaunchScreen.storyboard */; };
 		33099D35238358C900119F18 /* MakeImpactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D34238358C900119F18 /* MakeImpactTests.swift */; };
 		33099D40238358C900119F18 /* MakeImpactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D3F238358C900119F18 /* MakeImpactUITests.swift */; };
+		334AEF7C239C19C3005DCE1C /* UIButton+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334AEF7B239C19C3005DCE1C /* UIButton+extensions.swift */; };
+		334AEF7E239C1F8C005DCE1C /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334AEF7D239C1F8C005DCE1C /* Color+extensions.swift */; };
 		338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9CFA23958CEF00907E5B /* DiscoverCell.swift */; };
 		338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338C9CFB23958CEF00907E5B /* DiscoverCell.xib */; };
 		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
@@ -73,6 +75,8 @@
 		33099D3B238358C900119F18 /* MakeImpactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakeImpactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33099D3F238358C900119F18 /* MakeImpactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeImpactUITests.swift; sourceTree = "<group>"; };
 		33099D41238358C900119F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		334AEF7B239C19C3005DCE1C /* UIButton+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extensions.swift"; sourceTree = "<group>"; };
+		334AEF7D239C1F8C005DCE1C /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
 		338C9CFA23958CEF00907E5B /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
 		338C9CFB23958CEF00907E5B /* DiscoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCell.xib; sourceTree = "<group>"; };
 		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				33F8207523998F4F00D93723 /* UIView+extensions.swift */,
+				334AEF7B239C19C3005DCE1C /* UIButton+extensions.swift */,
+				334AEF7D239C1F8C005DCE1C /* Color+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -516,10 +522,12 @@
 				33040AB82385BB6200AA98F8 /* MyImpactVC.swift in Sources */,
 				33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */,
 				338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */,
+				334AEF7E239C1F8C005DCE1C /* Color+extensions.swift in Sources */,
 				33040ABA2385BB7500AA98F8 /* NewsVC.swift in Sources */,
 				33F820742398D47B00D93723 /* DiscoverDetailVC.swift in Sources */,
 				33F8207623998F4F00D93723 /* UIView+extensions.swift in Sources */,
 				33099D1E238358C600119F18 /* AppDelegate.swift in Sources */,
+				334AEF7C239C19C3005DCE1C /* UIButton+extensions.swift in Sources */,
 				33F820722398BBE600D93723 /* HeadlineView.swift in Sources */,
 				338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */,
 				33040AC12385BC6500AA98F8 /* Constants.swift in Sources */,

@@ -26,7 +26,11 @@ class DiscoverDetailVC: UIViewController {
     fileprivate func setupViews() {
         headlineView.issue = issue
         textView.isEditable = false
+        impactButton.isImpactButton()
+        navigationController?.navigationItem.title = issue.mainCategory
         
+        textView.backgroundColor = .white
+        textView.text = "Content:\n\nCertainty:\n\nSocial Proof:\n\nValue\n\nUrgency\n\n"
     }
     
 //MARK: IBActions
