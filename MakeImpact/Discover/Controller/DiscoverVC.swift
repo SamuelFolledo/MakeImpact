@@ -85,14 +85,20 @@ extension DiscoverVC: UICollectionViewDataSource { //for data
 }
 
 //MARK: Extensions
-extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension DiscoverVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { //didSelect
         performSegue(withIdentifier: kSHOWDETAILID, sender: issues[indexPath.section])
     }
-    
+}
+
+extension DiscoverVC: UICollectionViewDelegateFlowLayout { //sizing
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+                        sizeForItemAt indexPath: IndexPath) -> CGSize { //size
         return CGSize(width: width * 0.9, height: height / 4)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets { //spacing
+        return UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
     }
 }
