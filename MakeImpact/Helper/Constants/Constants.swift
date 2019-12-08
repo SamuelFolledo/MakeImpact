@@ -21,8 +21,9 @@ let kSHOWDETAILID: String = "showDetailId"
 //Discover Views
 let kDISCOVERCELLID: String = "discoverCellId"
 let kSAMPLEDISCOVERIMAGE: UIImage = UIImage(named: "forest")!
+
 let kDISCOVERNEWSCELLID: String = "discoverNewsCellId"
-let kDISCOVERMAINCONTENTCELLID: String = "discoverMainContentCellId"
+let kDISCOVERDESCRIPTIONCELLID: String = "discoverDescriptionCellId"
 let kDISCOVERPOSSIBLECHARITIESCELLID: String = "discoverPossibleCharitiesCellId"
 let kDISCOVERBUTTONSCELLID: String = "discoverButtonsCellId"
 let kDISCOVERSTATSCELLID: String = "discoverStatsCellId"
