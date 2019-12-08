@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,19 +24,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="IJq-jQ-iFg" customClass="DiscoverCell" customModule="MakeImpact" customModuleProvider="target">
-                                        <rect key="frame" x="-19" y="0.0" width="413" height="158"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w7H-Jc-6lS">
-                                            <rect key="frame" x="0.0" y="0.0" width="413" height="158"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.15482183199999999" green="0.51544284330000001" blue="0.018791459650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <size key="customSize" width="413" height="158"/>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -67,7 +54,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-tL-GNE" userLabel="headlineView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPm-tL-GNE" userLabel="headline Container">
                                 <rect key="frame" x="0.0" y="44" width="375" height="258.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jot-GR-sJq" customClass="HeadlineView" customModule="MakeImpact" customModuleProvider="target">
@@ -93,7 +80,7 @@
                                     <constraint firstItem="Jot-GR-sJq" firstAttribute="centerX" secondItem="SPm-tL-GNE" secondAttribute="centerX" id="vbh-T8-ds8"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5W-ac-sWT" userLabel="textView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5W-ac-sWT" userLabel="content Container">
                                 <rect key="frame" x="0.0" y="302.5" width="375" height="254.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Content:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sVA-yU-Ixx">
@@ -112,7 +99,7 @@
                                     <constraint firstItem="sVA-yU-Ixx" firstAttribute="width" secondItem="z5W-ac-sWT" secondAttribute="width" id="nPh-39-lXf"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4L-b3-f7v" userLabel="buttonView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4L-b3-f7v" userLabel="button Container">
                                 <rect key="frame" x="37.5" y="567" width="300" height="41"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rp1-jp-J7e">
