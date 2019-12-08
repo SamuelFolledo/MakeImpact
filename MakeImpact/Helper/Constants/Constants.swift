@@ -21,10 +21,24 @@ let kSHOWDETAILID: String = "showDetailId"
 //Discover Views
 let kDISCOVERCELLID: String = "discoverCellId"
 let kSAMPLEDISCOVERIMAGE: UIImage = UIImage(named: "forest")!
+let kDISCOVERNEWSCELLID: String = "discoverNewsCellId"
+let kDISCOVERMAINCONTENTCELLID: String = "discoverMainContentCellId"
+let kDISCOVERPOSSIBLECHARITIESCELLID: String = "discoverPossibleCharitiesCellId"
+let kDISCOVERBUTTONSCELLID: String = "discoverButtonsCellId"
+let kDISCOVERSTATSCELLID: String = "discoverStatsCellId"
+let kDISCOVERPOLLSCELLID: String = "discoverPollsCellId"
+let kDISCOVERRELATEDIMPACTSCELLID: String = "discoverRelatedImpactsCellId"
+let kDISCOVERREVIEWSCELLID: String = "discoverReviewsCellId"
+let kDISCOVERSPONSORSCELLID: String = "discoverSponsorsCellId"
+let kDISCOVERQUESTIONSCELLID: String = "discoverQuestionsCellId"
+
 
 //Colors
 let kBLACKCGCOLOR: CGColor = UIColor.black.cgColor
 let kWHITECGCOLOR: CGColor = UIColor.white.cgColor
+let kHEXCOLORSTRING: String = "#008B43FF"
+let kMAINCOLOR: UIColor = UIColor.init(hex: kHEXCOLORSTRING)!
+let kMAINCGCOLOR: CGColor = kMAINCOLOR.cgColor
 
 //Issue model
 let kISSUEID: String = "issueId"
@@ -33,7 +47,4 @@ let kISSUESECONDCATEGORY: String = "issueSecondCategory"
 let kISSUECONTACT: String = "issueContact"
 let kISSUEIMAGE: String = "issueImage"
 
-//colors
-let kHEXCOLORSTRING: String = "#008B43FF"
-let kMAINCOLOR: UIColor = UIColor.init(hex: kHEXCOLORSTRING)!
-let kMAINCGCOLOR: CGColor = kMAINCOLOR.cgColor
+
