@@ -178,7 +178,7 @@
 		33040A992385B61300AA98F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				33F8206E2398B41900D93723 /* HeadlineView */,
+				3377BB07239DAD9A0096DAB7 /* DiscoverDetail */,
 				338C9CFE23958CF800907E5B /* DiscoverCVCell */,
 			);
 			path = View;
@@ -362,6 +362,22 @@
 				33099D41238358C900119F18 /* Info.plist */,
 			);
 			path = MakeImpactUITests;
+			sourceTree = "<group>";
+		};
+		3377BB07239DAD9A0096DAB7 /* DiscoverDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3377BB08239DADAB0096DAB7 /* ContentView */,
+				33F8206E2398B41900D93723 /* HeadlineView */,
+			);
+			path = DiscoverDetail;
+			sourceTree = "<group>";
+		};
+		3377BB08239DADAB0096DAB7 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 		338C9CFE23958CF800907E5B /* DiscoverCVCell */ = {
