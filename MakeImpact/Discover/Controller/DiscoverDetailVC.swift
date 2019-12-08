@@ -28,6 +28,7 @@ class DiscoverDetailVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib.init(nibName: "NewsCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERNEWSCELLID)
+        collectionView.register(UINib.init(nibName: "DescriptionCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERDESCRIPTIONCELLID)
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
 //        flowLayout.itemSize = CGSize(width: 98, height: 134)
         flowLayout.itemSize = UICollectionViewFlowLayout.automaticSize //automatic height size
@@ -62,13 +63,13 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
             let cell: NewsCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERNEWSCELLID, for: indexPath) as! NewsCell
             cell.issue = issue
-            //        cell.backgroundColor = .red
+                    cell.backgroundColor = .red
             return cell
         default:
-            let cell: NewsCell = collectionView
-            .dequeueReusableCell(withReuseIdentifier: kDISCOVERNEWSCELLID, for: indexPath) as! NewsCell
+            let cell: DescriptionCell = collectionView
+            .dequeueReusableCell(withReuseIdentifier: kDISCOVERDESCRIPTIONCELLID, for: indexPath) as! DescriptionCell
             cell.issue = issue
-            //        cell.backgroundColor = .red
+                    cell.backgroundColor = .yellow
             return cell
         }
     }

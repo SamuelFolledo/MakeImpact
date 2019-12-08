@@ -25,10 +25,10 @@
 		33099D40238358C900119F18 /* MakeImpactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33099D3F238358C900119F18 /* MakeImpactUITests.swift */; };
 		334AEF7C239C19C3005DCE1C /* UIButton+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334AEF7B239C19C3005DCE1C /* UIButton+extensions.swift */; };
 		334AEF7E239C1F8C005DCE1C /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334AEF7D239C1F8C005DCE1C /* Color+extensions.swift */; };
-		3377BB0A239DAF770096DAB7 /* MainContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3377BB09239DAF770096DAB7 /* MainContent.xib */; };
-		3377BB0C239DAF8B0096DAB7 /* MainContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377BB0B239DAF8B0096DAB7 /* MainContent.swift */; };
 		3377BB12239DB1280096DAB7 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377BB10239DB1280096DAB7 /* NewsCell.swift */; };
 		3377BB13239DB1280096DAB7 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3377BB11239DB1280096DAB7 /* NewsCell.xib */; };
+		3377BB17239DC2200096DAB7 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377BB15239DC2200096DAB7 /* DescriptionCell.swift */; };
+		3377BB18239DC2200096DAB7 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3377BB16239DC2200096DAB7 /* DescriptionCell.xib */; };
 		338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9CFA23958CEF00907E5B /* DiscoverCell.swift */; };
 		338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338C9CFB23958CEF00907E5B /* DiscoverCell.xib */; };
 		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
@@ -79,10 +79,10 @@
 		33099D41238358C900119F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334AEF7B239C19C3005DCE1C /* UIButton+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extensions.swift"; sourceTree = "<group>"; };
 		334AEF7D239C1F8C005DCE1C /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
-		3377BB09239DAF770096DAB7 /* MainContent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainContent.xib; sourceTree = "<group>"; };
-		3377BB0B239DAF8B0096DAB7 /* MainContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContent.swift; sourceTree = "<group>"; };
 		3377BB10239DB1280096DAB7 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		3377BB11239DB1280096DAB7 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		3377BB15239DC2200096DAB7 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		3377BB16239DC2200096DAB7 /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
 		338C9CFA23958CEF00907E5B /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
 		338C9CFB23958CEF00907E5B /* DiscoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCell.xib; sourceTree = "<group>"; };
 		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
@@ -372,18 +372,9 @@
 			isa = PBXGroup;
 			children = (
 				3377BB0F239DB1140096DAB7 /* NewsCell */,
-				3377BB08239DADAB0096DAB7 /* ContentView */,
+				3377BB14239DC1C80096DAB7 /* DescriptionCell */,
 			);
 			path = DiscoverDetail;
-			sourceTree = "<group>";
-		};
-		3377BB08239DADAB0096DAB7 /* ContentView */ = {
-			isa = PBXGroup;
-			children = (
-				3377BB0B239DAF8B0096DAB7 /* MainContent.swift */,
-				3377BB09239DAF770096DAB7 /* MainContent.xib */,
-			);
-			path = ContentView;
 			sourceTree = "<group>";
 		};
 		3377BB0F239DB1140096DAB7 /* NewsCell */ = {
@@ -393,6 +384,15 @@
 				3377BB11239DB1280096DAB7 /* NewsCell.xib */,
 			);
 			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		3377BB14239DC1C80096DAB7 /* DescriptionCell */ = {
+			isa = PBXGroup;
+			children = (
+				3377BB15239DC2200096DAB7 /* DescriptionCell.swift */,
+				3377BB16239DC2200096DAB7 /* DescriptionCell.xib */,
+			);
+			path = DescriptionCell;
 			sourceTree = "<group>";
 		};
 		338C9CFE23958CF800907E5B /* DiscoverCVCell */ = {
@@ -511,10 +511,10 @@
 				338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */,
 				33040AC72385C74800AA98F8 /* Main.storyboard in Resources */,
 				33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */,
-				3377BB0A239DAF770096DAB7 /* MainContent.xib in Resources */,
 				33099D27238358C900119F18 /* Assets.xcassets in Resources */,
 				33040AAD2385B7FB00AA98F8 /* News.storyboard in Resources */,
 				33040AAB2385B79E00AA98F8 /* MyImpact.storyboard in Resources */,
+				3377BB18239DC2200096DAB7 /* DescriptionCell.xib in Resources */,
 				33040AB12385B81800AA98F8 /* Discover.storyboard in Resources */,
 				33040AB62385B84A00AA98F8 /* Settings.storyboard in Resources */,
 				3377BB13239DB1280096DAB7 /* NewsCell.xib in Resources */,
@@ -546,6 +546,7 @@
 				33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */,
 				3377BB12239DB1280096DAB7 /* NewsCell.swift in Sources */,
 				338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */,
+				3377BB17239DC2200096DAB7 /* DescriptionCell.swift in Sources */,
 				334AEF7E239C1F8C005DCE1C /* Color+extensions.swift in Sources */,
 				33040ABA2385BB7500AA98F8 /* NewsVC.swift in Sources */,
 				33F820742398D47B00D93723 /* DiscoverDetailVC.swift in Sources */,
@@ -554,7 +555,6 @@
 				334AEF7C239C19C3005DCE1C /* UIButton+extensions.swift in Sources */,
 				338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */,
 				33040AC12385BC6500AA98F8 /* Constants.swift in Sources */,
-				3377BB0C239DAF8B0096DAB7 /* MainContent.swift in Sources */,
 				33099D20238358C600119F18 /* SceneDelegate.swift in Sources */,
 				33040ABE2385BBB300AA98F8 /* SettingsVC.swift in Sources */,
 				338C9D022395A4C700907E5B /* Issue.swift in Sources */,
