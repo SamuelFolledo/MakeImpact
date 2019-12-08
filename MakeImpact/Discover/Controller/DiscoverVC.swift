@@ -26,17 +26,19 @@ class DiscoverVC: UIViewController {
 //MARK: Private Methods
     fileprivate func setupViews() {
         testPopulateIssues()
-//        discoverCollectionView.register(DiscoverCell.self, forCellWithReuseIdentifier: "\(kDISCOVERCELLID)")
-//        discoverCollectionView.register(DiscoverCell.self, forCellWithReuseIdentifier: kDISCOVERCELLID) //only needed if I am not using storyboard
+        setupCollectionView()
+    }
+    
+    fileprivate func setupCollectionView() {
         discoverCollectionView.delegate = self
         discoverCollectionView.dataSource = self
-        discoverCollectionView.register(UINib.init(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: "discoverCellId")
-        let flowLayout = UICollectionViewFlowLayout()
+        discoverCollectionView.register(UINib.init(nibName: "DiscoverCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCELLID)
+        let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = CGSize(width: 98, height: 134)
         flowLayout.sectionInset = UIEdgeInsets(top: 0,left: 5,bottom: 0,right: 5)
         flowLayout.scrollDirection = .vertical
         flowLayout.minimumInteritemSpacing = 0.0
-        discoverCollectionView.collectionViewLayout = flowLayout
+        discoverCollectionView.collectionViewLayout = flowLayout //this is needed so the image size will not control the size of the cell
     }
     
     fileprivate func testPopulateIssues() {
@@ -64,6 +66,24 @@ class DiscoverVC: UIViewController {
     }
 }
 
+//MARK: UICollectionViewDataSource
+extension DiscoverVC: UICollectionViewDataSource { //for data
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { //horizontal
+        return 1
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int { //vertical count
+        return issues.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //cellForItemAt
+        let cell: DiscoverCell = collectionView
+            .dequeueReusableCell(withReuseIdentifier: kDISCOVERCELLID, for: indexPath) as! DiscoverCell
+        cell.issue = issues[indexPath.section]
+        return cell
+    }
+}
+
 //MARK: Extensions
 extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { //didSelect
@@ -76,22 +96,3 @@ extension DiscoverVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayo
         return CGSize(width: width * 0.9, height: height / 4)
     }
 }
-
-//MARK: UICollectionViewDataSource
-extension DiscoverVC: UICollectionViewDataSource { //for data
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { //horizontal
-        return 1 //just one section
-    }
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int { //vertical
-        return issues.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: DiscoverCell = collectionView
-            .dequeueReusableCell(withReuseIdentifier: kDISCOVERCELLID, for: indexPath) as! DiscoverCell
-        cell.issue = issues[indexPath.section]
-        return cell
-    }
-}
-
