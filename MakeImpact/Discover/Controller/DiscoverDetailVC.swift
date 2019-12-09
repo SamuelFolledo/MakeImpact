@@ -11,8 +11,8 @@ import UIKit
 class DiscoverDetailVC: UIViewController {
 //MARK: Properties
     var issue: Issue!
-    private lazy var width: CGFloat = view.frame.size.width
-    private lazy var height: CGFloat = view.frame.size.height
+    private lazy var safeAreaWidth: CGFloat = self.view.safeAreaFrame.width
+    private lazy var safeAreaHeight: CGFloat = self.view.safeAreaFrame.height
 
 //MARK: IBOutlets
     @IBOutlet weak var collectionView: UICollectionView!
@@ -88,9 +88,9 @@ extension DiscoverDetailVC: UICollectionViewDelegateFlowLayout { //sizing
                         sizeForItemAt indexPath: IndexPath) -> CGSize { //size
         switch indexPath.section {
         case 0:
-            return CGSize(width: width * 1, height: height / 2.5)
+            return CGSize(width: safeAreaWidth * 1, height: safeAreaHeight / 2.5)
         default:
-            return CGSize(width: width * 0.95, height: height / 4)
+            return CGSize(width: safeAreaWidth * 0.95, height: safeAreaHeight / 4)
         }
     }
     
