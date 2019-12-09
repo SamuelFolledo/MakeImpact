@@ -9,7 +9,16 @@
 import UIKit
 
 extension UIView {
-
+    
+    public var safeAreaFrame: CGRect { //read-only property
+        if #available(iOS 11, *) { //safeAreaFrame will be the frame of the safe area if the iOS version is 11 or greater.
+            return safeAreaLayoutGuide.layoutFrame
+        }
+        return bounds //just the frame of the view
+    }
+    
+    
+//CollectionView
     func findCollectionView() -> UICollectionView? {
         if let collectionView = self as? UICollectionView {
             return collectionView
