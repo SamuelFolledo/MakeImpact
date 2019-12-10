@@ -90,8 +90,20 @@ extension DiscoverDetailVC: UICollectionViewDelegateFlowLayout { //sizing
         case 0:
             return CGSize(width: safeAreaWidth * 1, height: safeAreaHeight / 2.5)
         default:
-            return CGSize(width: safeAreaWidth * 0.95, height: safeAreaHeight / 4)
+            let itemText = "\"We have moral obligation to take care of our future descendants\""
+            let height = predictTextHeight(txt: itemText)
+            //let cell = collectionView.cellForItem(at: indexPath.section)
+            
+            return CGSize(width: safeAreaWidth * 0.95, height: height + 30)
         }
+    }
+    func predictTextHeight(txt: String) -> CGFloat{
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.text = txt
+        let height = label.sizeThatFits(CGSize(width: self.view.bounds.width - 20, height: CGFloat.greatestFiniteMagnitude)).height //calculates the height based on the text, and automatically shrink it base on the text
+        return height
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets { //spacing

@@ -29,6 +29,8 @@
 		3377BB13239DB1280096DAB7 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3377BB11239DB1280096DAB7 /* NewsCell.xib */; };
 		3377BB17239DC2200096DAB7 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377BB15239DC2200096DAB7 /* DescriptionCell.swift */; };
 		3377BB18239DC2200096DAB7 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3377BB16239DC2200096DAB7 /* DescriptionCell.xib */; };
+		3377BB1C239E37070096DAB7 /* PossibleCharitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3377BB1A239E37070096DAB7 /* PossibleCharitiesCell.swift */; };
+		3377BB1D239E37070096DAB7 /* PossibleCharitiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3377BB1B239E37070096DAB7 /* PossibleCharitiesCell.xib */; };
 		338C9CFC23958CEF00907E5B /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9CFA23958CEF00907E5B /* DiscoverCell.swift */; };
 		338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338C9CFB23958CEF00907E5B /* DiscoverCell.xib */; };
 		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
@@ -83,6 +85,8 @@
 		3377BB11239DB1280096DAB7 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		3377BB15239DC2200096DAB7 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		3377BB16239DC2200096DAB7 /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
+		3377BB1A239E37070096DAB7 /* PossibleCharitiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleCharitiesCell.swift; sourceTree = "<group>"; };
+		3377BB1B239E37070096DAB7 /* PossibleCharitiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PossibleCharitiesCell.xib; sourceTree = "<group>"; };
 		338C9CFA23958CEF00907E5B /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
 		338C9CFB23958CEF00907E5B /* DiscoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCell.xib; sourceTree = "<group>"; };
 		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
@@ -371,6 +375,7 @@
 		3377BB07239DAD9A0096DAB7 /* DiscoverDetail */ = {
 			isa = PBXGroup;
 			children = (
+				3377BB19239E36CA0096DAB7 /* PossibleCharitiesCell */,
 				3377BB0F239DB1140096DAB7 /* NewsCell */,
 				3377BB14239DC1C80096DAB7 /* DescriptionCell */,
 			);
@@ -393,6 +398,15 @@
 				3377BB16239DC2200096DAB7 /* DescriptionCell.xib */,
 			);
 			path = DescriptionCell;
+			sourceTree = "<group>";
+		};
+		3377BB19239E36CA0096DAB7 /* PossibleCharitiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				3377BB1A239E37070096DAB7 /* PossibleCharitiesCell.swift */,
+				3377BB1B239E37070096DAB7 /* PossibleCharitiesCell.xib */,
+			);
+			path = PossibleCharitiesCell;
 			sourceTree = "<group>";
 		};
 		338C9CFE23958CF800907E5B /* DiscoverCVCell */ = {
@@ -510,6 +524,7 @@
 			files = (
 				338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */,
 				33040AC72385C74800AA98F8 /* Main.storyboard in Resources */,
+				3377BB1D239E37070096DAB7 /* PossibleCharitiesCell.xib in Resources */,
 				33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */,
 				33099D27238358C900119F18 /* Assets.xcassets in Resources */,
 				33040AAD2385B7FB00AA98F8 /* News.storyboard in Resources */,
@@ -544,6 +559,7 @@
 			files = (
 				33040AB82385BB6200AA98F8 /* MyImpactVC.swift in Sources */,
 				33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */,
+				3377BB1C239E37070096DAB7 /* PossibleCharitiesCell.swift in Sources */,
 				3377BB12239DB1280096DAB7 /* NewsCell.swift in Sources */,
 				338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */,
 				3377BB17239DC2200096DAB7 /* DescriptionCell.swift in Sources */,
