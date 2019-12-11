@@ -35,6 +35,9 @@
 		338C9CFD23958CEF00907E5B /* DiscoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338C9CFB23958CEF00907E5B /* DiscoverCell.xib */; };
 		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
 		338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D032395B18E00907E5B /* MainTabBarController.swift */; };
+		33C4439223A1729D0074D1D6 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C4439023A1729D0074D1D6 /* SettingsCell.swift */; };
+		33C4439323A1729D0074D1D6 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C4439123A1729D0074D1D6 /* SettingsCell.xib */; };
+		33C4439523A173A50074D1D6 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C4439423A173A50074D1D6 /* SettingData.swift */; };
 		33F820742398D47B00D93723 /* DiscoverDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F820732398D47B00D93723 /* DiscoverDetailVC.swift */; };
 		33F8207623998F4F00D93723 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8207523998F4F00D93723 /* UIView+extensions.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +94,9 @@
 		338C9CFB23958CEF00907E5B /* DiscoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCell.xib; sourceTree = "<group>"; };
 		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		338C9D032395B18E00907E5B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		33C4439023A1729D0074D1D6 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		33C4439123A1729D0074D1D6 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		33C4439423A173A50074D1D6 /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
 		33F820732398D47B00D93723 /* DiscoverDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverDetailVC.swift; sourceTree = "<group>"; };
 		33F8207523998F4F00D93723 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +170,8 @@
 		33040A962385B60400AA98F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				33C4439023A1729D0074D1D6 /* SettingsCell.swift */,
+				33C4439123A1729D0074D1D6 /* SettingsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 		33040A972385B60900AA98F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				33C4439423A173A50074D1D6 /* SettingData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -528,6 +537,7 @@
 				33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */,
 				33099D27238358C900119F18 /* Assets.xcassets in Resources */,
 				33040AAD2385B7FB00AA98F8 /* News.storyboard in Resources */,
+				33C4439323A1729D0074D1D6 /* SettingsCell.xib in Resources */,
 				33040AAB2385B79E00AA98F8 /* MyImpact.storyboard in Resources */,
 				3377BB18239DC2200096DAB7 /* DescriptionCell.xib in Resources */,
 				33040AB12385B81800AA98F8 /* Discover.storyboard in Resources */,
@@ -559,6 +569,8 @@
 			files = (
 				33040AB82385BB6200AA98F8 /* MyImpactVC.swift in Sources */,
 				33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */,
+				33C4439223A1729D0074D1D6 /* SettingsCell.swift in Sources */,
+				33C4439523A173A50074D1D6 /* SettingData.swift in Sources */,
 				3377BB1C239E37070096DAB7 /* PossibleCharitiesCell.swift in Sources */,
 				3377BB12239DB1280096DAB7 /* NewsCell.swift in Sources */,
 				338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */,
