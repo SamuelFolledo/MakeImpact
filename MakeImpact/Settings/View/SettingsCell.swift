@@ -9,7 +9,15 @@
 import UIKit
 
 class SettingsCell: UITableViewCell {
-
+    var setting: SettingData! {
+        didSet {
+            populateCell()
+        }
+    }
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var cellImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,8 +25,11 @@ class SettingsCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func populateCell() {
+        titleLabel.text = setting.title
+        cellImageView.image = setting.image
     }
     
 }
