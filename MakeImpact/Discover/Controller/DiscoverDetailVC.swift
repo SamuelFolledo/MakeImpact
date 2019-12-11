@@ -91,7 +91,6 @@ extension DiscoverDetailVC: UICollectionViewDelegateFlowLayout { //sizing
             let itemText = "\"We have moral obligation to take care of our future descendants\""
             let height = predictTextHeight(txt: itemText)
             //let cell = collectionView.cellForItem(at: indexPath.section)
-            
             return CGSize(width: safeAreaWidth * 0.95, height: height + 50)
         }
     }
@@ -109,7 +108,7 @@ extension DiscoverDetailVC: UICollectionViewDelegateFlowLayout { //sizing
         case 0:
             return UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         default:
-            return UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+            return UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         }
     }
 }
