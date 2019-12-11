@@ -24,10 +24,14 @@ class SettingsVC: UIViewController {
 //MARK: Private Methods
     fileprivate func setupViews() {
         createCellData()
+        setupTableView()
+    }
+    
+    fileprivate func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "SettingsCell", bundle: nil), forCellReuseIdentifier: kSETTINGSCELLID)
-        
+        tableView.tableFooterView = UIView() //remove the extra cells lines
     }
     
     fileprivate func createCellData() {
@@ -40,7 +44,6 @@ class SettingsVC: UIViewController {
             SettingData(title: "Settings", image: kBLANKIMAGE),
             SettingData(title: "Credits", image: kBLANKIMAGE),
             SettingData(title: "Logout", image: kBLANKIMAGE)
-            
         ]
     }
     
@@ -53,10 +56,11 @@ class SettingsVC: UIViewController {
 //MARK: Extensions
 extension SettingsVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 60
     }
 }
 
+//MARK: DataSource TableView
 extension SettingsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         settings.count
