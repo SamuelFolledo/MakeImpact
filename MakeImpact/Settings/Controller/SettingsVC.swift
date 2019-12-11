@@ -52,7 +52,9 @@ class SettingsVC: UIViewController {
 
 //MARK: Extensions
 extension SettingsVC: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
 }
 
 extension SettingsVC: UITableViewDataSource {
@@ -65,6 +67,4 @@ extension SettingsVC: UITableViewDataSource {
         cell.setting = settings[indexPath.row]
         return cell
     }
-    
-    
 }
