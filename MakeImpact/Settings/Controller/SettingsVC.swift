@@ -12,6 +12,7 @@ class SettingsVC: UIViewController {
 //MARK: Properties
     
 //MARK: IBOutlets
+    @IBOutlet weak var tableView: UITableView!
     
 //MARK: App Life Cycle
     override func viewDidLoad() {
@@ -22,6 +23,8 @@ class SettingsVC: UIViewController {
 //MARK: Private Methods
     fileprivate func setupViews() {
         view.backgroundColor = .blue
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
 //MARK: IBActions
@@ -31,4 +34,18 @@ class SettingsVC: UIViewController {
 }
 
 //MARK: Extensions
+extension SettingsVC: UITableViewDelegate {
+    
+}
 
+extension SettingsVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        UITableViewCell()
+    }
+    
+    
+}
