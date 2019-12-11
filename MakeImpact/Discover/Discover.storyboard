@@ -104,7 +104,7 @@
         <scene sceneID="p96-I4-Vit">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jCD-Oj-vB2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" id="bMj-M5-Gmj"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="browse" id="bMj-M5-Gmj"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mYY-Mq-qx5">
@@ -121,4 +121,7 @@
             <point key="canvasLocation" x="5.7971014492753632" y="63.616071428571423"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="browse" width="64" height="64"/>
+    </resources>
 </document>
