@@ -19,6 +19,7 @@ let kAUTHENTICATIONVC: String = "authenticationVC"
 let kSHOWDETAILID: String = "showDetailId"
 let kSHOWSETTINGSID: String = "toSettingsId"
 let kSETTINGSCELLID: String = "settingsCellId"
+let kBLANKIMAGE: UIImage = UIImage(named: "blankImage")!
 
 //Discover Views
 let kDISCOVERCELLID: String = "discoverCellId"
