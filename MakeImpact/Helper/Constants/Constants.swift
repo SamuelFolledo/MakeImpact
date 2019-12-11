@@ -17,6 +17,7 @@ let kAUTHENTICATIONVC: String = "authenticationVC"
 
 //storyboard Segue Identifier
 let kSHOWDETAILID: String = "showDetailId"
+let kSHOWSETTINGSID: String = "toSettingsId"
 
 //Discover Views
 let kDISCOVERCELLID: String = "discoverCellId"
