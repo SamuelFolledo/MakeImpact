@@ -63,13 +63,11 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
             let cell: NewsCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERNEWSCELLID, for: indexPath) as! NewsCell
             cell.issue = issue
-                    cell.backgroundColor = .red
             return cell
         default:
             let cell: DescriptionCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERDESCRIPTIONCELLID, for: indexPath) as! DescriptionCell
             cell.issue = issue
-                    cell.backgroundColor = .yellow
             return cell
         }
     }
@@ -94,7 +92,7 @@ extension DiscoverDetailVC: UICollectionViewDelegateFlowLayout { //sizing
             let height = predictTextHeight(txt: itemText)
             //let cell = collectionView.cellForItem(at: indexPath.section)
             
-            return CGSize(width: safeAreaWidth * 0.95, height: height + 30)
+            return CGSize(width: safeAreaWidth * 0.95, height: height + 50)
         }
     }
     func predictTextHeight(txt: String) -> CGFloat{
@@ -109,7 +107,7 @@ extension DiscoverDetailVC: UICollectionViewDelegateFlowLayout { //sizing
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets { //spacing
         switch section {
         case 0:
-            return UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
+            return UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
         default:
             return UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
         }
