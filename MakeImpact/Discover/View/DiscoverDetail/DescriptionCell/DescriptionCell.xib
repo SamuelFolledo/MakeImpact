@@ -20,13 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="433" height="132"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a13-MA-Jmi">
-                                <rect key="frame" x="0.0" y="0.0" width="433" height="26.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="433" height="39.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdw-rG-ILI">
-                                <rect key="frame" x="0.0" y="26.5" width="433" height="105.5"/>
+                                <rect key="frame" x="0.0" y="39.5" width="433" height="105.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +39,7 @@
                             <constraint firstItem="a13-MA-Jmi" firstAttribute="centerX" secondItem="IKS-bg-rjZ" secondAttribute="centerX" id="grG-z9-RfQ"/>
                             <constraint firstItem="a13-MA-Jmi" firstAttribute="width" secondItem="IKS-bg-rjZ" secondAttribute="width" id="mpN-nd-FEf"/>
                             <constraint firstItem="a13-MA-Jmi" firstAttribute="top" secondItem="IKS-bg-rjZ" secondAttribute="top" id="npf-Ij-0fb"/>
-                            <constraint firstItem="a13-MA-Jmi" firstAttribute="height" secondItem="IKS-bg-rjZ" secondAttribute="height" multiplier="1:5" id="rPl-0k-GKr"/>
+                            <constraint firstItem="a13-MA-Jmi" firstAttribute="height" secondItem="IKS-bg-rjZ" secondAttribute="height" multiplier="3:10" id="rPl-0k-GKr"/>
                             <constraint firstItem="Gdw-rG-ILI" firstAttribute="top" secondItem="a13-MA-Jmi" secondAttribute="bottom" id="wix-Fn-fac"/>
                         </constraints>
                     </view>
