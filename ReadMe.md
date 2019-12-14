@@ -18,7 +18,7 @@ An iOS app that empowers users to make an impact to current issues or crisis
 ### Demo
 - Browse's Issue Cells are clickable and shows Issue's details. 
 - MVVM Architecture following industry level patterns and architecture, separating concerns and responsibilities
-<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/screenshots/v1/makeImpactv1.gif" width="437" height="863">
+<img src="https://github.com/SamuelFolledo/MakeImpact/blob/master/static/screenshots/v1/makeImpactv1.gif" width="540" height="960">
 
 #### Issue List Tab
 - ViewController in a tab which contains all the issues available and clickable to display its detail
