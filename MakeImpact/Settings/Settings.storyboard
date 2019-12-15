@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="1034.7826086956522" y="62.946428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings DetailVC-->
         <scene sceneID="7ou-wg-e7n">
             <objects>
-                <viewController id="ean-ew-t9O" sceneMemberID="viewController">
+                <viewController id="ean-ew-t9O" customClass="SettingsDetailVC" customModule="MakeImpact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7KD-bL-Zen">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
