@@ -10,6 +10,11 @@ import UIKit
 
 class SettingsDetailVC: UIViewController {
 //MARK: Properties
+    var setting: SettingData! {
+        didSet {
+            self.title = setting.title
+        }
+    }
     
 //MARK: IBOutlets
     
