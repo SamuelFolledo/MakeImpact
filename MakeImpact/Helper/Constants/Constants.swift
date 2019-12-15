@@ -28,6 +28,8 @@ let kSAMPLEDISCOVERIMAGE: UIImage = UIImage(named: "forest")!
 let kDISCOVERNEWSCELLID: String = "discoverNewsCellId"
 let kDISCOVERDESCRIPTIONCELLID: String = "discoverDescriptionCellId"
 let kDISCOVERPOSSIBLECHARITIESCELLID: String = "discoverPossibleCharitiesCellId"
+let kDISCOVERCHARITIESCELLID: String = "discoverCharitiesCellId"
+
 let kDISCOVERBUTTONSCELLID: String = "discoverButtonsCellId"
 let kDISCOVERSTATSCELLID: String = "discoverStatsCellId"
 let kDISCOVERPOLLSCELLID: String = "discoverPollsCellId"
