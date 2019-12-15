@@ -17,7 +17,7 @@ let kAUTHENTICATIONVC: String = "authenticationVC"
 
 //storyboard Segue Identifier
 let kSHOWDETAILID: String = "showDetailId"
-let kSHOWSETTINGSID: String = "toSettingsId"
+let kTOSETTINGSDETAILID: String = "toSettingsDetailId"
 let kSETTINGSCELLID: String = "settingsCellId"
 let kBLANKIMAGE: UIImage = UIImage(named: "blankImage")!
 
