@@ -170,8 +170,7 @@
 		33040A962385B60400AA98F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				33C4439023A1729D0074D1D6 /* SettingsCell.swift */,
-				33C4439123A1729D0074D1D6 /* SettingsCell.xib */,
+				33A6ABE823A6020F00862AC2 /* Setting Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,6 +424,15 @@
 				338C9CFB23958CEF00907E5B /* DiscoverCell.xib */,
 			);
 			path = DiscoverCVCell;
+			sourceTree = "<group>";
+		};
+		33A6ABE823A6020F00862AC2 /* Setting Cell */ = {
+			isa = PBXGroup;
+			children = (
+				33C4439023A1729D0074D1D6 /* SettingsCell.swift */,
+				33C4439123A1729D0074D1D6 /* SettingsCell.xib */,
+			);
+			path = "Setting Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
