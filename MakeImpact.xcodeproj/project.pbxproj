@@ -36,6 +36,9 @@
 		338C9D022395A4C700907E5B /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D012395A4C700907E5B /* Issue.swift */; };
 		338C9D042395B18E00907E5B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C9D032395B18E00907E5B /* MainTabBarController.swift */; };
 		33A6ABEA23A603E500862AC2 /* SettingsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6ABE923A603E500862AC2 /* SettingsDetailVC.swift */; };
+		33A6ABEE23A60CFC00862AC2 /* CharitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6ABEC23A60CFC00862AC2 /* CharitiesCell.swift */; };
+		33A6ABEF23A60CFC00862AC2 /* CharitiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33A6ABED23A60CFC00862AC2 /* CharitiesCell.xib */; };
+		33A6ABF323A6136600862AC2 /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6ABF223A6136600862AC2 /* Charity.swift */; };
 		33C4439223A1729D0074D1D6 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C4439023A1729D0074D1D6 /* SettingsCell.swift */; };
 		33C4439323A1729D0074D1D6 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C4439123A1729D0074D1D6 /* SettingsCell.xib */; };
 		33C4439523A173A50074D1D6 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C4439423A173A50074D1D6 /* SettingData.swift */; };
@@ -96,6 +99,9 @@
 		338C9D012395A4C700907E5B /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		338C9D032395B18E00907E5B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		33A6ABE923A603E500862AC2 /* SettingsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDetailVC.swift; sourceTree = "<group>"; };
+		33A6ABEC23A60CFC00862AC2 /* CharitiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesCell.swift; sourceTree = "<group>"; };
+		33A6ABED23A60CFC00862AC2 /* CharitiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharitiesCell.xib; sourceTree = "<group>"; };
+		33A6ABF223A6136600862AC2 /* Charity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charity.swift; sourceTree = "<group>"; };
 		33C4439023A1729D0074D1D6 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		33C4439123A1729D0074D1D6 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 		33C4439423A173A50074D1D6 /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
@@ -197,7 +203,8 @@
 		33040A992385B61300AA98F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3377BB07239DAD9A0096DAB7 /* DiscoverDetail */,
+				33A6ABEB23A609BD00862AC2 /* DiscoverCellsDetailViews */,
+				3377BB07239DAD9A0096DAB7 /* DiscoverDetailViews */,
 				338C9CFE23958CF800907E5B /* DiscoverCVCell */,
 			);
 			path = View;
@@ -383,14 +390,14 @@
 			path = MakeImpactUITests;
 			sourceTree = "<group>";
 		};
-		3377BB07239DAD9A0096DAB7 /* DiscoverDetail */ = {
+		3377BB07239DAD9A0096DAB7 /* DiscoverDetailViews */ = {
 			isa = PBXGroup;
 			children = (
 				3377BB19239E36CA0096DAB7 /* PossibleCharitiesCell */,
 				3377BB0F239DB1140096DAB7 /* NewsCell */,
 				3377BB14239DC1C80096DAB7 /* DescriptionCell */,
 			);
-			path = DiscoverDetail;
+			path = DiscoverDetailViews;
 			sourceTree = "<group>";
 		};
 		3377BB0F239DB1140096DAB7 /* NewsCell */ = {
@@ -416,6 +423,8 @@
 			children = (
 				3377BB1A239E37070096DAB7 /* PossibleCharitiesCell.swift */,
 				3377BB1B239E37070096DAB7 /* PossibleCharitiesCell.xib */,
+				33A6ABF123A6135500862AC2 /* CharityModel */,
+				33A6ABF023A60D0200862AC2 /* CharitiesCell */,
 			);
 			path = PossibleCharitiesCell;
 			sourceTree = "<group>";
@@ -436,6 +445,30 @@
 				33C4439123A1729D0074D1D6 /* SettingsCell.xib */,
 			);
 			path = "Setting Cell";
+			sourceTree = "<group>";
+		};
+		33A6ABEB23A609BD00862AC2 /* DiscoverCellsDetailViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DiscoverCellsDetailViews;
+			sourceTree = "<group>";
+		};
+		33A6ABF023A60D0200862AC2 /* CharitiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				33A6ABEC23A60CFC00862AC2 /* CharitiesCell.swift */,
+				33A6ABED23A60CFC00862AC2 /* CharitiesCell.xib */,
+			);
+			path = CharitiesCell;
+			sourceTree = "<group>";
+		};
+		33A6ABF123A6135500862AC2 /* CharityModel */ = {
+			isa = PBXGroup;
+			children = (
+				33A6ABF223A6136600862AC2 /* Charity.swift */,
+			);
+			path = CharityModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,6 +580,7 @@
 				3377BB1D239E37070096DAB7 /* PossibleCharitiesCell.xib in Resources */,
 				33099D2A238358C900119F18 /* LaunchScreen.storyboard in Resources */,
 				33099D27238358C900119F18 /* Assets.xcassets in Resources */,
+				33A6ABEF23A60CFC00862AC2 /* CharitiesCell.xib in Resources */,
 				33040AAD2385B7FB00AA98F8 /* News.storyboard in Resources */,
 				33C4439323A1729D0074D1D6 /* SettingsCell.xib in Resources */,
 				33040AAB2385B79E00AA98F8 /* MyImpact.storyboard in Resources */,
@@ -581,6 +615,7 @@
 				33040AB82385BB6200AA98F8 /* MyImpactVC.swift in Sources */,
 				33040ABC2385BB9400AA98F8 /* DiscoverVC.swift in Sources */,
 				33C4439223A1729D0074D1D6 /* SettingsCell.swift in Sources */,
+				33A6ABEE23A60CFC00862AC2 /* CharitiesCell.swift in Sources */,
 				33C4439523A173A50074D1D6 /* SettingData.swift in Sources */,
 				3377BB1C239E37070096DAB7 /* PossibleCharitiesCell.swift in Sources */,
 				3377BB12239DB1280096DAB7 /* NewsCell.swift in Sources */,
@@ -589,6 +624,7 @@
 				334AEF7E239C1F8C005DCE1C /* Color+extensions.swift in Sources */,
 				33040ABA2385BB7500AA98F8 /* NewsVC.swift in Sources */,
 				33A6ABEA23A603E500862AC2 /* SettingsDetailVC.swift in Sources */,
+				33A6ABF323A6136600862AC2 /* Charity.swift in Sources */,
 				33F820742398D47B00D93723 /* DiscoverDetailVC.swift in Sources */,
 				33F8207623998F4F00D93723 /* UIView+extensions.swift in Sources */,
 				33099D1E238358C600119F18 /* AppDelegate.swift in Sources */,
