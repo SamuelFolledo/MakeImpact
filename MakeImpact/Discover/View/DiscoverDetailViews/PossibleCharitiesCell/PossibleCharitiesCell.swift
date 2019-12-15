@@ -10,6 +10,8 @@ import UIKit
 
 class PossibleCharitiesCell: UICollectionViewCell {
 
+    @IBOutlet weak var charitiesCollectionView: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
