@@ -21,6 +21,18 @@ class SettingsVC: UIViewController {
         setupViews()
     }
     
+//MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case kTOSETTINGSDETAILID:
+            guard let setting = sender as? SettingData else { return }
+            guard let vc: SettingsDetailVC = segue.destination as? SettingsDetailVC else { return }
+            vc.setting = setting
+        default:
+            print("unknown segue identiifer")
+        }
+    }
+    
 //MARK: Private Methods
     fileprivate func setupViews() {
         createCellData()
