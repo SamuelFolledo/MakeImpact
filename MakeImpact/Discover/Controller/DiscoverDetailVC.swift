@@ -10,7 +10,11 @@ import UIKit
 
 class DiscoverDetailVC: UIViewController {
 //MARK: Properties
-    var issue: Issue!
+    var issue: Issue! {
+        didSet {
+            self.title = issue.mainCategory
+        }
+    }
     private lazy var safeAreaWidth: CGFloat = self.view.safeAreaFrame.width
     private lazy var safeAreaHeight: CGFloat = self.view.safeAreaFrame.height
 
@@ -54,7 +58,6 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
     
     func numberOfSections(in collectionView: UICollectionView) -> Int { //vertical count
         return 11
-//        return issues.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //cellForItemAt
