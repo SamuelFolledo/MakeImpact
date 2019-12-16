@@ -6,7 +6,7 @@
 //  Copyright © 2019 SamuelFolledo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Charity {
     var title: String
