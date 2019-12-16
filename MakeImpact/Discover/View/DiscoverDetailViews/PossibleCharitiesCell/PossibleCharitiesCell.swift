@@ -9,12 +9,21 @@
 import UIKit
 
 class PossibleCharitiesCell: UICollectionViewCell {
+    var charities: [Charity]! {
+        didSet {
+            setupCollectionView()
+        }
+    }
 
     @IBOutlet weak var charitiesCollectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    fileprivate func setupCollectionView() {
+        
     }
 
 }
