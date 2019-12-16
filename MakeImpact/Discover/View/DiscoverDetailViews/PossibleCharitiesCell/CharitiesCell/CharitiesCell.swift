@@ -9,7 +9,12 @@
 import UIKit
 
 class CharitiesCell: UICollectionViewCell {
-    let charity: Charity
+    var charity: Charity! {
+        didSet {
+            imageView.image = charity.image
+            titleLabel.text = charity.title
+        }
+    }
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
