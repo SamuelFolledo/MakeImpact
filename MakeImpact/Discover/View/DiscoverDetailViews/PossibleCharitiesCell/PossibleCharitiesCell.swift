@@ -23,7 +23,7 @@ class PossibleCharitiesCell: UICollectionViewCell {
     }
     
     fileprivate func setupCollectionView() {
-        
+        charitiesCollectionView.backgroundColor = .red
     }
 
 }
