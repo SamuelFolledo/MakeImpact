@@ -23,5 +23,4 @@ class CharitiesCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
 }
