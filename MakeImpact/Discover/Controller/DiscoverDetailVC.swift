@@ -67,6 +67,18 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERNEWSCELLID, for: indexPath) as! NewsCell
             cell.issue = issue
             return cell
+        case 1:
+            let cell: DescriptionCell = collectionView
+            .dequeueReusableCell(withReuseIdentifier: kDISCOVERDESCRIPTIONCELLID, for: indexPath) as! DescriptionCell
+            cell.issue = issue
+            return cell
+        case 2:
+            let cell: PossibleCharitiesCell = collectionView
+            .dequeueReusableCell(withReuseIdentifier: kDISCOVERPOSSIBLECHARITIESCELLID, for: indexPath) as! PossibleCharitiesCell
+            var charities: [Charity] = []
+//            for i
+//            cell.charities =
+            return cell
         default:
             let cell: DescriptionCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERDESCRIPTIONCELLID, for: indexPath) as! DescriptionCell
