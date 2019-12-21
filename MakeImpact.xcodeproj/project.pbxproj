@@ -42,6 +42,7 @@
 		33C4439223A1729D0074D1D6 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C4439023A1729D0074D1D6 /* SettingsCell.swift */; };
 		33C4439323A1729D0074D1D6 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C4439123A1729D0074D1D6 /* SettingsCell.xib */; };
 		33C4439523A173A50074D1D6 /* SettingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C4439423A173A50074D1D6 /* SettingData.swift */; };
+		33E38BD823ADF24900DD6CAA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E38BD723ADF24900DD6CAA /* Category.swift */; };
 		33F820742398D47B00D93723 /* DiscoverDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F820732398D47B00D93723 /* DiscoverDetailVC.swift */; };
 		33F8207623998F4F00D93723 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8207523998F4F00D93723 /* UIView+extensions.swift */; };
 /* End PBXBuildFile section */
@@ -105,6 +106,7 @@
 		33C4439023A1729D0074D1D6 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		33C4439123A1729D0074D1D6 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
 		33C4439423A173A50074D1D6 /* SettingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingData.swift; sourceTree = "<group>"; };
+		33E38BD723ADF24900DD6CAA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		33F820732398D47B00D93723 /* DiscoverDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverDetailVC.swift; sourceTree = "<group>"; };
 		33F8207523998F4F00D93723 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				338C9D012395A4C700907E5B /* Issue.swift */,
+				33E38BD723ADF24900DD6CAA /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -626,6 +629,7 @@
 				33A6ABEA23A603E500862AC2 /* SettingsDetailVC.swift in Sources */,
 				33A6ABF323A6136600862AC2 /* Charity.swift in Sources */,
 				33F820742398D47B00D93723 /* DiscoverDetailVC.swift in Sources */,
+				33E38BD823ADF24900DD6CAA /* Category.swift in Sources */,
 				33F8207623998F4F00D93723 /* UIView+extensions.swift in Sources */,
 				33099D1E238358C600119F18 /* AppDelegate.swift in Sources */,
 				334AEF7C239C19C3005DCE1C /* UIButton+extensions.swift in Sources */,

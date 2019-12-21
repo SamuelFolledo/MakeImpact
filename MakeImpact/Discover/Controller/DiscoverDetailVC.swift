@@ -32,12 +32,11 @@ class DiscoverDetailVC: UIViewController {
     
 //MARK: Private Methods
     fileprivate func createTestCharities() {
-        switch char {
-        case .some(<#T##Issue#>):
-            <#code#>
-        default:
-            break
-        }
+//        switch issue.mainCategory { //fix later
+//        case .
+//        default:
+//            break
+//        }
     }
     
     fileprivate func setupViews() {
@@ -89,7 +88,7 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERPOSSIBLECHARITIESCELLID, for: indexPath) as! PossibleCharitiesCell
             cell.charitiesCollectionView.register(UINib(nibName: "CharitiesCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCHARITIESCELLID)
             var charities: [Charity] = []
-            for charity in charities where charity.
+//            for charity in charities where charity. //fix later
 //            cell.charities =
             return cell
         default:
