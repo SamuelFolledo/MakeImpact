@@ -13,8 +13,11 @@ class DiscoverDetailVC: UIViewController {
     var issue: Issue! {
         didSet {
             self.title = issue.mainCategory
+            createTestCharities()
         }
     }
+//    var issues: [Issue] = []
+    var charities: [Charity] = []
     private lazy var safeAreaWidth: CGFloat = self.view.safeAreaFrame.width
     private lazy var safeAreaHeight: CGFloat = self.view.safeAreaFrame.height
 
@@ -28,6 +31,15 @@ class DiscoverDetailVC: UIViewController {
     }
     
 //MARK: Private Methods
+    fileprivate func createTestCharities() {
+        switch char {
+        case .some(<#T##Issue#>):
+            <#code#>
+        default:
+            break
+        }
+    }
+    
     fileprivate func setupViews() {
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -77,7 +89,7 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERPOSSIBLECHARITIESCELLID, for: indexPath) as! PossibleCharitiesCell
             cell.charitiesCollectionView.register(UINib(nibName: "CharitiesCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCHARITIESCELLID)
             var charities: [Charity] = []
-//            for i
+            for charity in charities where charity.
 //            cell.charities =
             return cell
         default:
