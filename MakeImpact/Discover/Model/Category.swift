@@ -8,6 +8,6 @@
 
 import UIKit
 
-class Category {
+struct Category {
     
 }
