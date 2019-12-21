@@ -59,6 +59,7 @@ class DiscoverVC: UIViewController {
         case kSHOWDETAILID:
             guard let issue = sender as? Issue else { return }
             guard let detailVC: DiscoverDetailVC = segue.destination as? DiscoverDetailVC else { return }
+//            detailVC.issues = issues
             detailVC.issue = issue
         default:
             break
