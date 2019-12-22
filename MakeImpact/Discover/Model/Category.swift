@@ -8,6 +8,6 @@
 
 import UIKit
 
-enum Category {
+enum Category: String {
     
 }
