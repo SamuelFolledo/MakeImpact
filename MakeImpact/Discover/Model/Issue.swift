@@ -10,15 +10,15 @@ import UIKit
 
 class Issue {
     let id: String!
-    let mainCategory: String!
-    var secondCategory: String = ""
+    let mainCategory: Category!
+    var categories: [Category]!
     var contact: String = ""
     let image: UIImage!
     
-    init(id: String, mainCategory: String, secondCategory: String, contact: String, image: UIImage = kSAMPLEDISCOVERIMAGE) {
+    init(id: String, mainCategory: Category, categories: [Category] = [], contact: String, image: UIImage = kSAMPLEDISCOVERIMAGE) {
         self.id = id
         self.mainCategory = mainCategory
-        self.secondCategory = secondCategory
+        self.categories = categories
         self.contact = contact
         self.image = image
     }
