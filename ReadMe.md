@@ -39,4 +39,3 @@ An iOS app that empowers users to make an impact to current issues or crisis
 <a name="contributors"></a>
 ## Contributors
 - Lead Developer: [Samuel Folledo](https://github.com/SamuelFolledo)
-- Worked with [Jose Arellanes Aldaco](https://github.com/siko408)
