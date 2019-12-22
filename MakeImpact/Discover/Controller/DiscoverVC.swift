@@ -42,12 +42,12 @@ class DiscoverVC: UIViewController {
     }
     
     fileprivate func testPopulateIssues() {
-        let issue1: Issue = Issue(id: "1", mainCategory: "Forest", secondCategory: "Earth", contact: "Samuel")
-        let issue2: Issue = Issue(id: "2", mainCategory: "World Hunger", secondCategory: "Poverty", contact: "Raquel")
-        let issue3: Issue = Issue(id: "3", mainCategory: "Recycle", secondCategory: "Earth", contact: "Samuel")
-        let issue4: Issue = Issue(id: "4", mainCategory: "Politics", secondCategory: "Poverty", contact: "Raquel")
-        let issue5: Issue = Issue(id: "5", mainCategory: "Women In Tech", secondCategory: "Earth", contact: "Samuel")
-        let issue6: Issue = Issue(id: "6", mainCategory: "Innovative Technology", secondCategory: "Poverty", contact: "Raquel")
+        let issue1: Issue = Issue(id: "1", mainCategory: "Forest", categories: "Earth", contact: "Samuel")
+        let issue2: Issue = Issue(id: "2", mainCategory: "World Hunger", categories: "Poverty", contact: "Raquel")
+        let issue3: Issue = Issue(id: "3", mainCategory: "Recycle", categories: "Earth", contact: "Samuel")
+        let issue4: Issue = Issue(id: "4", mainCategory: "Politics", categories: "Poverty", contact: "Raquel")
+        let issue5: Issue = Issue(id: "5", mainCategory: "Women In Tech", categories: "Earth", contact: "Samuel")
+        let issue6: Issue = Issue(id: "6", mainCategory: "Innovative Technology", categories: "Poverty", contact: "Raquel")
         issues = [issue1, issue2, issue3, issue4, issue5, issue6]
     }
     
