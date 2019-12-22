@@ -12,7 +12,7 @@ class DiscoverDetailVC: UIViewController {
 //MARK: Properties
     var issue: Issue! {
         didSet {
-            self.title = issue.mainCategory
+            self.title = issue.mainCategory.text
             createTestCharities()
         }
     }
