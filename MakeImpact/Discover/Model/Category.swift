@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Category: String {
+enum Category: CaseIterable {
 /*
     - Categories for Issues and Charities
     - To add a new category, add the new case, add string value in CategoryConstant.swift, update in text computed property
