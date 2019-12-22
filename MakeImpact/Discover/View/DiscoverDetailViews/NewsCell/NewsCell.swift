@@ -27,7 +27,7 @@ class NewsCell: UICollectionViewCell {
     
     func setupView() {
         imageView.image = issue.image
-        titleLabel.text = issue.mainCategory
+        titleLabel.text = issue.mainCategory.text
         descriptionLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
     
