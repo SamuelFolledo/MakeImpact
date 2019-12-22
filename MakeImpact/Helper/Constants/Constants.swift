@@ -49,7 +49,7 @@ let kMAINCGCOLOR: CGColor = kMAINCOLOR.cgColor
 //Issue model
 let kISSUEID: String = "issueId"
 let kISSUEMAINCATEGORY: String = "issueMainCategory"
-let kISSUESECONDCATEGORY: String = "issueSecondCategory"
+let kISSUECATEGORIES: String = "issueCategories"
 let kISSUECONTACT: String = "issueContact"
 let kISSUEIMAGE: String = "issueImage"
 
