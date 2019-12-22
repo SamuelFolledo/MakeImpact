@@ -25,8 +25,8 @@ class Issue {
     
     init(dictionary: [String: Any]) {
         self.id = dictionary[kISSUEID] as? String
-        self.mainCategory = dictionary[kISSUEMAINCATEGORY] as? String
-        self.secondCategory = (dictionary[kISSUESECONDCATEGORY] as? String)!
+        self.mainCategory = dictionary[kISSUEMAINCATEGORY] as? Category
+        self.categories = dictionary[kISSUECATEGORIES] as? [Category]
         self.contact = (dictionary[kISSUECONTACT] as? String)!
         self.image =  UIImage(data: dictionary[kISSUEIMAGE] as! Data)
     }
