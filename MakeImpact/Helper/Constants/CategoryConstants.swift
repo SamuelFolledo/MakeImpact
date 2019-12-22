@@ -8,7 +8,7 @@
 
 import Foundation
 
-//Save the World
+//Impact the World
 let kWORLDHUNGER: String = "World Hunger"
 let kPOVERTY: String = "Poverty"
 
@@ -25,6 +25,12 @@ let kREUSABLEENERGY: String = "Reusable Energy"
 let kFOREST: String = "Forest"
 let kEARTH: String = "Earth"
 let kENDANGEREDSPECIES: String = "Endagered Species"
+let kGLOBALWARMING: String = "Global Warming"
 
 //Politics
 let kPOLITICS: String = "Politics"
+
+//Area
+let kLOCAL: String = "Local"
+let kNATIONAL: String = "National"
+let kWORLDWIDE: String = "Worldwide"
