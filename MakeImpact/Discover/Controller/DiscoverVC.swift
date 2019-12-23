@@ -11,6 +11,7 @@ import UIKit
 class DiscoverVC: UIViewController {
 //MARK: Properties
     var issues: [Issue] = []
+//    var categories: [Category] = []
     private lazy var width: CGFloat = view.frame.size.width
     private lazy var height: CGFloat = view.frame.size.height
     
@@ -25,7 +26,8 @@ class DiscoverVC: UIViewController {
     
 //MARK: Private Methods
     fileprivate func setupViews() {
-        testPopulateIssues()
+//        testPopulateIssues()
+        populateCategoryCells()
         setupCollectionView()
     }
     
@@ -41,15 +43,19 @@ class DiscoverVC: UIViewController {
         discoverCollectionView.collectionViewLayout = flowLayout //this is needed so the image size will not control the size of the cell
     }
     
-    fileprivate func testPopulateIssues() {
-        let issue1: Issue = Issue(id: "1", mainCategory: "Forest", categories: "Earth", contact: "Samuel")
-        let issue2: Issue = Issue(id: "2", mainCategory: "World Hunger", categories: "Poverty", contact: "Raquel")
-        let issue3: Issue = Issue(id: "3", mainCategory: "Recycle", categories: "Earth", contact: "Samuel")
-        let issue4: Issue = Issue(id: "4", mainCategory: "Politics", categories: "Poverty", contact: "Raquel")
-        let issue5: Issue = Issue(id: "5", mainCategory: "Women In Tech", categories: "Earth", contact: "Samuel")
-        let issue6: Issue = Issue(id: "6", mainCategory: "Innovative Technology", categories: "Poverty", contact: "Raquel")
-        issues = [issue1, issue2, issue3, issue4, issue5, issue6]
+    fileprivate func populateCategoryCells() {
+//        for
     }
+    
+//    fileprivate func testPopulateIssues() {
+//        let issue1: Issue = Issue(id: "1", mainCategory: "Forest", categories: "Earth", contact: "Samuel")
+//        let issue2: Issue = Issue(id: "2", mainCategory: "World Hunger", categories: "Poverty", contact: "Raquel")
+//        let issue3: Issue = Issue(id: "3", mainCategory: "Recycle", categories: "Earth", contact: "Samuel")
+//        let issue4: Issue = Issue(id: "4", mainCategory: "Politics", categories: "Poverty", contact: "Raquel")
+//        let issue5: Issue = Issue(id: "5", mainCategory: "Women In Tech", categories: "Earth", contact: "Samuel")
+//        let issue6: Issue = Issue(id: "6", mainCategory: "Innovative Technology", categories: "Poverty", contact: "Raquel")
+//        issues = [issue1, issue2, issue3, issue4, issue5, issue6]
+//    }
     
 //MARK: IBActions
     
@@ -74,7 +80,7 @@ extension DiscoverVC: UICollectionViewDataSource { //for data
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int { //vertical count
-        return issues.count
+        return Category.allCases.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //cellForItemAt
