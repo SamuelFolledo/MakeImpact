@@ -16,7 +16,7 @@ class DiscoverCell: UICollectionViewCell {
     var issue: Issue! {
         didSet {
             imageView.image = issue.image
-            titleLabel.text = issue.mainCategory
+            titleLabel.text = issue.mainCategory.text
             populateViews()
         }
     }
