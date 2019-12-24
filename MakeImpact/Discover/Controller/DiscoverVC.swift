@@ -62,10 +62,11 @@ class DiscoverVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case kSHOWDETAILID:
-            guard let issue = sender as? Issue else { return }
+            guard let category = sender as? Category else { return }
             guard let detailVC: DiscoverDetailVC = segue.destination as? DiscoverDetailVC else { return }
 //            detailVC.issues = issues
-            detailVC.issue = issue
+//            detailVC.issue = issue
+            detailVC.category = category
         default:
             break
         }
