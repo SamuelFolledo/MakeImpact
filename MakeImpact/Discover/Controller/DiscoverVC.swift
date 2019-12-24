@@ -86,7 +86,8 @@ extension DiscoverVC: UICollectionViewDataSource { //for data
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell { //cellForItemAt
         let cell: DiscoverCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERCELLID, for: indexPath) as! DiscoverCell
-        cell.issue = issues[indexPath.section]
+//        cell.issue = issues[indexPath.section]
+        cell.category = Category.allCases[indexPath.section]
         return cell
     }
 }
@@ -94,7 +95,7 @@ extension DiscoverVC: UICollectionViewDataSource { //for data
 //MARK: Extensions
 extension DiscoverVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { //didSelect
-        performSegue(withIdentifier: kSHOWDETAILID, sender: issues[indexPath.section])
+        performSegue(withIdentifier: kSHOWDETAILID, sender: Category.allCases[indexPath.section])
     }
 }
 
