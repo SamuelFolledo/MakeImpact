@@ -10,13 +10,19 @@ import UIKit
 
 class DiscoverDetailVC: UIViewController {
 //MARK: Properties
-    var issue: Issue! {
+//    var issue: Issue! {
+//        didSet {
+//            self.title = issue.mainCategory.text
+//            createTestCharities()
+//        }
+//    }
+    var category: Category! {
         didSet {
-            self.title = issue.mainCategory.text
+            self.title = category.text
             createTestCharities()
         }
     }
-//    var issues: [Issue] = []
+    var issues: [Issue] = []
     var charities: [Charity] = []
     private lazy var safeAreaWidth: CGFloat = self.view.safeAreaFrame.width
     private lazy var safeAreaHeight: CGFloat = self.view.safeAreaFrame.height
@@ -32,11 +38,13 @@ class DiscoverDetailVC: UIViewController {
     
 //MARK: Private Methods
     fileprivate func createTestCharities() {
-//        switch issue.mainCategory { //fix later
-//        case .
-//        default:
-//            break
-//        }
+        let issue1: Issue = Issue(id: "1", mainCategory: .forest, categories: [.earth, .forest, .globalWarming], contact: "Samuel")
+        let issue2: Issue = Issue(id: "2", mainCategory: .worldHunger, categories: [.worldwide, .worldHunger, .poverty, .national, .local, .worldHunger], contact: "Raquel")
+        let issue3: Issue = Issue(id: "3", mainCategory: .recycle, categories: [.recycle, .earth, .worldwide, .globalWarming], contact: "Samuel")
+        let issue4: Issue = Issue(id: "4", mainCategory: .politics, categories: [.politics, .poverty, .national], contact: "Raquel")
+        let issue5: Issue = Issue(id: "5", mainCategory: .womenInTech, categories: [.womenInTech, .earth, .national, .local], contact: "Samuel")
+        let issue6: Issue = Issue(id: "6", mainCategory: .innovative, categories: [.innovative, .technology, .local, .national], contact: "Raquel")
+        issues = [issue1, issue2, issue3, issue4, issue5, issue6]
     }
     
     fileprivate func setupViews() {
