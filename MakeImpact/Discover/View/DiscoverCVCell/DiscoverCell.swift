@@ -13,10 +13,18 @@ import UIKit
 class DiscoverCell: UICollectionViewCell {
 //MARK: Properties
     var indexPath: IndexPath!
-    var issue: Issue! {
+//    var issue: Issue! {
+//        didSet {
+//            imageView.image = issue.image
+//            titleLabel.text = issue.mainCategory.text
+//            populateViews()
+//        }
+//    }
+    
+    var category: Category! {
         didSet {
-            imageView.image = issue.image
-            titleLabel.text = issue.mainCategory.text
+            imageView.image = category.image
+            titleLabel.text = category.text
             populateViews()
         }
     }
