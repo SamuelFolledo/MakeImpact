@@ -11,14 +11,13 @@ import UIKit
 class DiscoverVC: UIViewController {
 //MARK: Properties
     var issues: [Issue] = []
-//    var categories: [Category] = []
     private lazy var width: CGFloat = view.frame.size.width
     private lazy var height: CGFloat = view.frame.size.height
     
 //MARK: IBOutlets
     @IBOutlet weak var discoverCollectionView: UICollectionView!
     
-    //MARK: App Life Cycle
+//MARK: App Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
