@@ -61,4 +61,13 @@ enum Category: CaseIterable {
             return kWORLDWIDE
         }
     }
+    
+    var image: UIImage {
+        switch self {
+        case .local:
+            return kSAMPLEDISCOVERIMAGE
+        default:
+            return kSAMPLEDISCOVERIMAGE
+        }
+    }
 }
