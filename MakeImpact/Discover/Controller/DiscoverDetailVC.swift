@@ -84,12 +84,13 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
         case 0:
             let cell: NewsCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERNEWSCELLID, for: indexPath) as! NewsCell
-            cell.issue = issue
+//            cell.issue = issue
+            cell.category = category
             return cell
         case 1:
             let cell: DescriptionCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERDESCRIPTIONCELLID, for: indexPath) as! DescriptionCell
-            cell.issue = issue
+            cell.category = category
             return cell
         case 2:
             let cell: PossibleCharitiesCell = collectionView
@@ -102,7 +103,7 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
         default:
             let cell: DescriptionCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERDESCRIPTIONCELLID, for: indexPath) as! DescriptionCell
-            cell.issue = issue
+            cell.category = category
             return cell
         }
     }
