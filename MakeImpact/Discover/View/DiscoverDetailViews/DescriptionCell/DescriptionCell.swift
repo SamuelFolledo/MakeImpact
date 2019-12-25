@@ -9,7 +9,12 @@
 import UIKit
 
 class DescriptionCell: UICollectionViewCell {
-    var issue: Issue! {
+//    var issue: Issue! {
+//        didSet {
+//            setupCell()
+//        }
+//    }
+    var category: Category! {
         didSet {
             setupCell()
         }
