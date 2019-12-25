@@ -10,7 +10,12 @@ import UIKit
 
 class NewsCell: UICollectionViewCell {
 //MARK: Properties
-    var issue: Issue! {
+//    var issue: Issue! {
+//        didSet {
+//            setupView()
+//        }
+//    }
+    var category: Category! {
         didSet {
             setupView()
         }
@@ -26,8 +31,8 @@ class NewsCell: UICollectionViewCell {
     }
     
     func setupView() {
-        imageView.image = issue.image
-        titleLabel.text = issue.mainCategory.text
+        imageView.image = category.image
+        titleLabel.text = category.text
         descriptionLabel.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
     
