@@ -95,8 +95,8 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
         case 2:
             let cell: PossibleCharitiesCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERPOSSIBLECHARITIESCELLID, for: indexPath) as! PossibleCharitiesCell
-            cell.charitiesCollectionView.register(UINib(nibName: "CharitiesCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCHARITIESCELLID)
-            var charities: [Charity] = []
+//            cell.charitiesCollectionView.register(UINib(nibName: "CharitiesCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCHARITIESCELLID)
+//            var charities: [Charity] = []
 //            for charity in charities where charity. //fix later
 //            cell.charities =
             return cell
