@@ -23,7 +23,7 @@ class PossibleCharitiesCell: UICollectionViewCell {
     }
     
     fileprivate func setupCollectionView() {
-        cell.charitiesCollectionView.register(UINib(nibName: "CharitiesCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCHARITIESCELLID)
+//        cell.charitiesCollectionView.register(UINib(nibName: "CharitiesCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCHARITIESCELLID)
         charitiesCollectionView.backgroundColor = .red
     }
 
