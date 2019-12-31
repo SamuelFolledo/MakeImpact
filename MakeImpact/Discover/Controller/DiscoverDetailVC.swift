@@ -10,12 +10,6 @@ import UIKit
 
 class DiscoverDetailVC: UIViewController {
 //MARK: Properties
-//    var issue: Issue! {
-//        didSet {
-//            self.title = issue.mainCategory.text
-//            createTestCharities()
-//        }
-//    }
     var category: Category! {
         didSet {
             self.title = category.text
@@ -84,7 +78,6 @@ extension DiscoverDetailVC: UICollectionViewDataSource { //for data
         case 0:
             let cell: NewsCell = collectionView
             .dequeueReusableCell(withReuseIdentifier: kDISCOVERNEWSCELLID, for: indexPath) as! NewsCell
-//            cell.issue = issue
             cell.category = category
             return cell
         case 1:
@@ -130,7 +123,7 @@ extension DiscoverDetailVC: UICollectionViewDelegateFlowLayout { //sizing
             return CGSize(width: safeAreaWidth * 0.95, height: height + 50)
         }
     }
-    func predictTextHeight(txt: String) -> CGFloat{
+    func predictTextHeight(txt: String) -> CGFloat {
         let label = UILabel()
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 18)
