@@ -20,6 +20,8 @@ class PossibleCharitiesCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        charitiesCollectionView.register(UINib(nibName: "CharitiesCell", bundle: nil), forCellWithReuseIdentifier: kDISCOVERCHARITIESCELLID) //figure out how to load a cv cell e
+        
     }
     
     fileprivate func setupCollectionView() {
