@@ -208,9 +208,8 @@
 		33040A992385B61300AA98F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				33A6ABEB23A609BD00862AC2 /* DiscoverCellsDetailViews */,
 				3377BB07239DAD9A0096DAB7 /* DiscoverDetailViews */,
-				338C9CFE23958CF800907E5B /* DiscoverCVCell */,
+				338C9CFE23958CF800907E5B /* DiscoverVCCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,9 +398,7 @@
 		3377BB07239DAD9A0096DAB7 /* DiscoverDetailViews */ = {
 			isa = PBXGroup;
 			children = (
-				3377BB19239E36CA0096DAB7 /* PossibleCharitiesCell */,
-				3377BB0F239DB1140096DAB7 /* NewsCell */,
-				3377BB14239DC1C80096DAB7 /* DescriptionCell */,
+				33CA319923E55261009AA3DF /* CollectionView */,
 			);
 			path = DiscoverDetailViews;
 			sourceTree = "<group>";
@@ -435,13 +432,13 @@
 			path = PossibleCharitiesCell;
 			sourceTree = "<group>";
 		};
-		338C9CFE23958CF800907E5B /* DiscoverCVCell */ = {
+		338C9CFE23958CF800907E5B /* DiscoverVCCell */ = {
 			isa = PBXGroup;
 			children = (
 				338C9CFA23958CEF00907E5B /* DiscoverCell.swift */,
 				338C9CFB23958CEF00907E5B /* DiscoverCell.xib */,
 			);
-			path = DiscoverCVCell;
+			path = DiscoverVCCell;
 			sourceTree = "<group>";
 		};
 		33A6ABE823A6020F00862AC2 /* Setting Cell */ = {
@@ -451,13 +448,6 @@
 				33C4439123A1729D0074D1D6 /* SettingsCell.xib */,
 			);
 			path = "Setting Cell";
-			sourceTree = "<group>";
-		};
-		33A6ABEB23A609BD00862AC2 /* DiscoverCellsDetailViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DiscoverCellsDetailViews;
 			sourceTree = "<group>";
 		};
 		33A6ABF023A60D0200862AC2 /* CharitiesCell */ = {
@@ -475,6 +465,16 @@
 				33A6ABF223A6136600862AC2 /* Charity.swift */,
 			);
 			path = CharityModel;
+			sourceTree = "<group>";
+		};
+		33CA319923E55261009AA3DF /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3377BB19239E36CA0096DAB7 /* PossibleCharitiesCell */,
+				3377BB0F239DB1140096DAB7 /* NewsCell */,
+				3377BB14239DC1C80096DAB7 /* DescriptionCell */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
