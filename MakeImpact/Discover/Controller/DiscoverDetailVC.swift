@@ -22,7 +22,6 @@ class DiscoverDetailVC: UIViewController {
     private lazy var safeAreaHeight: CGFloat = self.view.safeAreaFrame.height
 
 //MARK: IBOutlets
-    @IBOutlet weak var collectionView: UICollectionView!
     
 //MARK: App Life Cycle
     override func viewDidLoad() {
@@ -59,10 +58,18 @@ class DiscoverDetailVC: UIViewController {
 //MARK: IBActions
     
 //MARK: Helpers
-    
+    func predictTextHeight(txt: String) -> CGFloat { //predicts height of string
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.text = txt
+        let height = label.sizeThatFits(CGSize(width: self.view.bounds.width - 20, height: CGFloat.greatestFiniteMagnitude)).height //calculates the height based on the text, and automatically shrink it base on the text
+        return height
+    }
 }
 
 //MARK: Extensions
+
 //MARK: UICollectionViewDataSource
 extension DiscoverDetailVC: UICollectionViewDataSource { //for data
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int { //horizontal
@@ -123,14 +130,7 @@ extension DiscoverDetailVC: UICollectionViewDelegateFlowLayout { //sizing
             return CGSize(width: safeAreaWidth * 0.95, height: height + 50)
         }
     }
-    func predictTextHeight(txt: String) -> CGFloat {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 18)
-        label.text = txt
-        let height = label.sizeThatFits(CGSize(width: self.view.bounds.width - 20, height: CGFloat.greatestFiniteMagnitude)).height //calculates the height based on the text, and automatically shrink it base on the text
-        return height
-    }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets { //spacing
         switch section {

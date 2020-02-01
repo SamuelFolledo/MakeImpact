@@ -200,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				338C9D012395A4C700907E5B /* Issue.swift */,
+				33A6ABF223A6136600862AC2 /* Charity.swift */,
 				33E38BD723ADF24900DD6CAA /* Category.swift */,
 			);
 			path = Model;
@@ -208,8 +209,8 @@
 		33040A992385B61300AA98F8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3377BB07239DAD9A0096DAB7 /* DiscoverDetailViews */,
 				338C9CFE23958CF800907E5B /* DiscoverVCCell */,
+				3377BB07239DAD9A0096DAB7 /* DiscoverDetailViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,7 +427,6 @@
 			children = (
 				3377BB1A239E37070096DAB7 /* PossibleCharitiesCell.swift */,
 				3377BB1B239E37070096DAB7 /* PossibleCharitiesCell.xib */,
-				33A6ABF123A6135500862AC2 /* CharityModel */,
 				33A6ABF023A60D0200862AC2 /* CharitiesCell */,
 			);
 			path = PossibleCharitiesCell;
@@ -457,14 +457,6 @@
 				33A6ABED23A60CFC00862AC2 /* CharitiesCell.xib */,
 			);
 			path = CharitiesCell;
-			sourceTree = "<group>";
-		};
-		33A6ABF123A6135500862AC2 /* CharityModel */ = {
-			isa = PBXGroup;
-			children = (
-				33A6ABF223A6136600862AC2 /* Charity.swift */,
-			);
-			path = CharityModel;
 			sourceTree = "<group>";
 		};
 		33CA319923E55261009AA3DF /* CollectionView */ = {
